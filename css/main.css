@@ -1223,20 +1223,6 @@ nav .menu-icon {
   overflow: hidden;
 }
 
-@supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
-  .header {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 90%, 0 80%, 0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 175em) {
-  .header {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 142, 195, 0.8)), to(rgba(0, 34, 62, 0.8)));
-    background-image: linear-gradient(to right bottom, rgba(0, 142, 195, 0.8), rgba(0, 34, 62, 0.8));
-  }
-}
-
 .header .header__portfolio {
   position: absolute;
   top: 9%;
@@ -1251,7 +1237,7 @@ nav .menu-icon {
 
 .header__text-box {
   position: absolute;
-  top: 45%;
+  top: 20%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1269,213 +1255,42 @@ nav .menu-icon {
   }
 }
 
-.header .fa-chevron-down {
+.gallery {
+  max-width: 1200px;
+  margin: auto;
   position: absolute;
-  top: 75%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: #F4F4ED;
-  display: inline-block;
-  width: 12px;
-  margin-left: -12px;
-  font-size: 36px;
-  line-height: 14px;
-  z-index: 999;
-  -webkit-animation: bounce 4000ms infinite;
-  animation: bounce 3000ms infinite;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
 }
 
-@media only screen and (max-height: 37.5em) {
-  .header .fa-chevron-down {
-    font-size: 2rem;
-  }
+.gallery {
+  padding: 2px;
+  padding: 0.4vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
 }
 
-.header .fa-chevron-down:hover {
-  color: #008ec3;
+.gallery div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 200px;
+  margin: 0.5vw;
 }
 
-.second_header {
-  height: 80vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 34, 62, 0.9)), to(rgba(0, 0, 0, 0.17))), url(../../img/architecture2.jpg);
-  background-image: linear-gradient(to right bottom, rgba(0, 34, 62, 0.9), rgba(0, 0, 0, 0.17)), url(../../img/architecture2.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  position: relative;
-  overflow: hidden;
-}
-
-.second_header .heading-primary {
-  margin-top: 15rem;
-}
-
-@supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
-  .second_header {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 90%, 0 80%, 0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 175em) {
-  .second_header {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 142, 195, 0.8)), to(rgba(0, 34, 62, 0.8)));
-    background-image: linear-gradient(to right bottom, rgba(0, 142, 195, 0.8), rgba(0, 34, 62, 0.8));
-  }
-}
-
-.second_header .header__portfolio {
-  position: absolute;
-  top: 9%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  position: absolute;
-  width: 100vw;
-  height: 50vh;
-  text-align: center;
-}
-
-.second_header__text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.second_header__text-box .btn--whitee {
-  margin-right: 2rem;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .second_header__text-box {
-    top: 45%;
-    width: 100%;
-  }
-}
-
-.second_header .fa-chevron-down {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #F4F4ED;
-  display: inline-block;
-  width: 12px;
-  margin-left: -12px;
-  font-size: 36px;
-  line-height: 14px;
-  z-index: 999;
-  -webkit-animation: bounce 4000ms infinite;
-  animation: bounce 3000ms infinite;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-}
-
-@media only screen and (max-height: 37.5em) {
-  .second_header .fa-chevron-down {
-    font-size: 2rem;
-  }
-}
-
-.second_header .fa-chevron-down:hover {
-  color: #008ec3;
-}
-
-.header-archives {
-  height: 80vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 34, 62, 0.9)), to(rgba(0, 0, 0, 0.17))), url(../../img/shelf.jpg);
-  background-image: linear-gradient(to right bottom, rgba(0, 34, 62, 0.9), rgba(0, 0, 0, 0.17)), url(../../img/shelf.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  position: relative;
-  overflow: hidden;
-}
-
-.header-archives .heading-primary {
-  margin-top: 15rem;
-}
-
-@supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
-  .header-archives {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 90%, 0 80%, 0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 175em) {
-  .header-archives {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 142, 195, 0.8)), to(rgba(0, 34, 62, 0.8)));
-    background-image: linear-gradient(to right bottom, rgba(0, 142, 195, 0.8), rgba(0, 34, 62, 0.8));
-  }
-}
-
-.header-archives .header__portfolio {
-  position: absolute;
-  top: 9%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  position: absolute;
-  width: 100vw;
-  height: 50vh;
-  text-align: center;
-}
-
-.header-archives__text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.header-archives__text-box .btn--whitee {
-  margin-right: 2rem;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .header-archives__text-box {
-    top: 45%;
-    width: 100%;
-  }
-}
-
-.header-archives .fa-chevron-down {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #F4F4ED;
-  display: inline-block;
-  width: 12px;
-  margin-left: -12px;
-  font-size: 36px;
-  line-height: 14px;
-  z-index: 999;
-  -webkit-animation: bounce 4000ms infinite;
-  animation: bounce 3000ms infinite;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-}
-
-@media only screen and (max-height: 37.5em) {
-  .header-archives .fa-chevron-down {
-    font-size: 2rem;
-  }
-}
-
-.header-archives .fa-chevron-down:hover {
-  color: #008ec3;
+.gallery div img {
+  width: 100%;
+  height: auto;
 }
 
 .header-gradnja {
@@ -1566,95 +1381,6 @@ nav .menu-icon {
 
 .header-gradnja .fa-chevron-down:hover {
   color: #008ec3;
-}
-
-.header-coming-soon {
-  height: 120vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 34, 62, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../../img/coming.jpg);
-  background-image: linear-gradient(to right bottom, rgba(0, 34, 62, 0.7), rgba(0, 0, 0, 0.7)), url(../../img/coming.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  position: relative;
-  overflow: hidden;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .header-coming-soon {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 34, 62, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../../img/coming.jpg);
-    background-image: linear-gradient(to right bottom, rgba(0, 34, 62, 0.7), rgba(0, 0, 0, 0.7)), url(../../img/coming.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-}
-
-@supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
-  .header-coming-soon {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 90%, 0 80%, 0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 175em) {
-  .header-coming-soon {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 142, 195, 0.8)), to(rgba(0, 34, 62, 0.8)));
-    background-image: linear-gradient(to right bottom, rgba(0, 142, 195, 0.8), rgba(0, 34, 62, 0.8));
-  }
-}
-
-.header-coming-soon__text-box-coming-soon .btn--whitee {
-  margin-right: 2rem;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .header-coming-soon__text-box-coming-soon {
-    top: 50%;
-    width: 100%;
-  }
-}
-
-.header-coming-soon .image {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.header-coming-soon .image img {
-  width: 100%;
-  height: 100%;
-}
-
-.countdown {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .countdown {
-    margin-top: 6rem;
-  }
-}
-
-.countdown li {
-  display: inline-block;
-  font-size: 3rem;
-  list-style-type: none;
-  padding: 2rem;
-  text-transform: uppercase;
-  color: #008ec3;
-}
-
-.countdown li span {
-  display: block;
-  font-size: 4rem;
-  color: #F4F4ED;
 }
 
 #about_me {

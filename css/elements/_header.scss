@@ -11,26 +11,6 @@
   overflow: hidden;
 
 
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    -webkit-clip-path: polygon(0 0,
-      100% 0,
-      100% 0,
-      100% 80%,
-      50% 90%,
-      0 80%,
-      0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);
-  }
-
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-  only screen and (min-width: 175em) {
-    background-image: linear-gradient(to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8));
-  }
-
-
   .header__portfolio {
     @include absCenter-top;
     position: absolute;
@@ -42,7 +22,7 @@
 
   &__text-box {
     position: absolute;
-    top: 45%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -55,212 +35,41 @@
     @include respond(phone) {
       top: 45%;
       width: 100%;
-    }
-  }
-
-  .fa-chevron-down {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $color-white;
-    display: inline-block;
-    width: 12px;
-    margin-left: -12px;
-    font-size: 36px;
-    line-height: 14px;
-    z-index: 999;
-    -webkit-animation: bounce 4000ms infinite;
-    animation: bounce 3000ms infinite;
-    transition: 1s ease-in-out;
-
-    @include respond(lumia) {
-      font-size: 2rem;
-    }
-
-
-    &:hover {
-      color: $color-primary-light;
     }
   }
 }
 
-.second_header {
-  height: 80vh;
-  background-image: linear-gradient(to right bottom,
-    rgba($color-primary-dark, 0.9),
-    rgba($color-black, 0.17)),
-    url(../../img/architecture2.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  position: relative;
-  overflow: hidden;
-  .heading-primary{
-    margin-top: 15rem;
-  }
+.gallery { 
+	max-width: 1200px;
+  margin: auto;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    -webkit-clip-path: polygon(0 0,
-      100% 0,
-      100% 0,
-      100% 80%,
-      50% 90%,
-      0 80%,
-      0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);
-  }
-
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-  only screen and (min-width: 175em) {
-    background-image: linear-gradient(to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8));
-  }
-
-
-  .header__portfolio {
-    @include absCenter-top;
-    position: absolute;
-    width: 100vw;
-    height: 50vh;
-    text-align: center;
-
-  }
-
-  &__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
-    .btn--whitee{
-      margin-right: 2rem;
-    }
-
-
-    @include respond(phone) {
-      top: 45%;
-      width: 100%;
-    }
-  }
-
-  .fa-chevron-down {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $color-white;
-    display: inline-block;
-    width: 12px;
-    margin-left: -12px;
-    font-size: 36px;
-    line-height: 14px;
-    z-index: 999;
-    -webkit-animation: bounce 4000ms infinite;
-    animation: bounce 3000ms infinite;
-    transition: 1s ease-in-out;
-
-    @include respond(lumia) {
-      font-size: 2rem;
-    }
-
-
-    &:hover {
-      color: $color-primary-light;
-    }
-  }
 }
-
-.header-archives {
-  height: 80vh;
-  background-image: linear-gradient(to right bottom,
-    rgba($color-primary-dark, 0.9),
-    rgba($color-black, 0.17)),
-    url(../../img/shelf.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  position: relative;
-  overflow: hidden;
-  .heading-primary{
-    margin-top: 15rem;
-  }
-
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    -webkit-clip-path: polygon(0 0,
-      100% 0,
-      100% 0,
-      100% 80%,
-      50% 90%,
-      0 80%,
-      0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);
-  }
-
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-  only screen and (min-width: 175em) {
-    background-image: linear-gradient(to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8));
-  }
-
-
-  .header__portfolio {
-    @include absCenter-top;
-    position: absolute;
-    width: 100vw;
-    height: 50vh;
-    text-align: center;
-
-  }
-
-  &__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
-    .btn--whitee{
-      margin-right: 2rem;
-    }
-
-
-    @include respond(phone) {
-      top: 45%;
-      width: 100%;
-    }
-  }
-
-  .fa-chevron-down {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $color-white;
-    display: inline-block;
-    width: 12px;
-    margin-left: -12px;
-    font-size: 36px;
-    line-height: 14px;
-    z-index: 999;
-    -webkit-animation: bounce 4000ms infinite;
-    animation: bounce 3000ms infinite;
-    transition: 1s ease-in-out;
-
-    @include respond(lumia) {
-      font-size: 2rem;
-    }
-
-
-    &:hover {
-      color: $color-primary-light;
-    }
-  }
+.gallery { 
+  padding : 2px;
+  padding: 0.4vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
+  display: flex;
+}
+.gallery div { 
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto; 
+  width: 200px; 
+  margin: 0.5vw; 
+}
+.gallery div img { 
+  width: 100%; 
+  height: auto; 
 }
 
 
@@ -351,102 +160,4 @@
       color: $color-primary-light;
     }
   }
-}
-
-.header-coming-soon {
-  height: 120vh;
-  background-image: linear-gradient(to right bottom,
-    rgba($color-primary-dark, 0.7),
-    rgba($color-black, 0.7)),
-    url(../../img/coming.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  position: relative;
-  overflow: hidden;
-
-  @include respond(phone) {
-    background-image: linear-gradient(to right bottom,
-    rgba($color-primary-dark, 0.7),
-    rgba($color-black, 0.7)),
-    url(../../img/coming.jpg);
-  background-size:100% 100%;
-  background-repeat: no-repeat;
-  }
-
- 
-
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    -webkit-clip-path: polygon(0 0,
-      100% 0,
-      100% 0,
-      100% 80%,
-      50% 90%,
-      0 80%,
-      0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);
-  }
-
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-  only screen and (min-width: 175em) {
-    background-image: linear-gradient(to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8));
-  }
-
-
-  &__text-box-coming-soon {
-
-
-
-    .btn--whitee{
-      margin-right: 2rem;
-    }
-
-
-    @include respond(phone) {
-      top: 50%;
-      width: 100%;
-    }
-  }
-  .image{
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    img{
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
-.countdown{
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  @include respond(phone) {
-  margin-top: 6rem;
-  }
-
-  li {
-    display: inline-block;
-    font-size: 3rem;
-    list-style-type: none;
-    padding: 2rem;
-    text-transform: uppercase;
-    color: $color-primary-light;
-
-
-    span {
-      display: block;
-      font-size: 4rem;
-      color: $color-white;    
-    }
-    
-  }
-
 }
