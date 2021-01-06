@@ -1,0 +1,129 @@
+.btn {
+
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 1.5rem 2.5rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    // animation-name: moveInBottom;
+    // animation-duration: 6s;
+    // animation-timing-function: ease-out;
+    // animation-delay: 2s;
+
+    @include respond(tab-land) {
+      padding: 1.25rem 2.25rem;
+      font-size: 1.35rem;
+    }
+
+
+    @include respond(phone) {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 1.2rem rgba($color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.2) scaleY(1.4);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+  &--lighterr {
+    background-color: $color-primary-light;
+    color: $color-white;
+  }
+  &--whitee {
+    background-color: $color-primary-dark;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary-dark;
+    }
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-primary;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &.no-margin {
+    margin: 0;
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+    margin-right: 3.5rem;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  // &--animated {
+  //   animation: moveInBottom 1s ease-out 1s;
+  //   animation-fill-mode: backwards;
+  // }
+}
+
+.btn-text {
+
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: 3px;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,219 @@
+.form {
+    backface-visibility: hidden;
+
+    .btn--green {
+        font-weight: 100;
+        padding: 1.5rem 1rem;
+        font-size: 1.4rem;
+    }
+
+    &__group:not(:last-child) {
+        margin-bottom: 1.5rem;
+
+    }
+
+
+    .heading-secondary-medium {
+        background-image: linear-gradient(to right,
+                $color-primary,
+                $color-primary-light);
+
+        @include respond(tab-port) {
+            background-image: linear-gradient(to right,
+                    $color-white,
+                    $color-primary-light);
+        }
+    }
+
+    textarea {
+        resize: none;
+        color: $color-white;
+        font-weight: 700;
+        font-size: 1.2rem;
+        padding: 2rem 1.5rem;
+        background-color: rgba($color-grey-light-1, .4);
+        border: none;
+        border-radius: .3rem;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        transition: all .3s;
+        font-family: 'Montserrat', sans-serif;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .8);
+            border-bottom: 3px solid $color-primary;
+        }
+
+        &::placeholder {
+            color: $color-white;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+
+    &__input {
+        font-weight: 700;
+        font-size: 1.2rem;
+        padding: 2rem 1.5rem;
+        background-color: rgba($color-grey-light-1, .4);
+        border-radius: .3rem;
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        transition: all .3s;
+        font-family: 'Montserrat', sans-serif;
+
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 .5rem .1rem rgba($color-black, .6);
+            border-bottom: 3px solid $color-primary;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-primary;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $color-white;
+        }
+    }
+
+
+
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+        color: $color-white;
+    }
+
+    &__input:placeholder-shown+&__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+
+    #success {
+        font-size: 2rem;
+        margin-top: 2rem;
+        color: $color-primary;
+        display: none;
+
+    }
+
+}
+
+.contact {
+    // background-image: linear-gradient(105deg,
+    //     rgba($color-black, .9) 0%,
+    //     rgba($color-primary-dark, .8) 50%,
+    //     transparent 50%),
+    //     url(../img/architecture3.jpg);
+    background-image: linear-gradient(105deg,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 34, 62, 0.8) 30%,
+            transparent 58%),
+        url(../img/architecture3.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    background-size: cover;
+    margin-left: 15rem;
+    box-shadow: 1.2rem 1.5rem 4rem rgba($color-primary-dark, .4);
+
+    @include respond(phone) {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+    @include respond(tab-land) {
+        // background-image: linear-gradient(105deg,
+        //         rgba($color-black, .9) 0%,
+        //         rgba($color-black, .7) 65%,
+        //         transparent 65%),
+        //     url(../img/architecture3.jpg);
+        background-size: cover;
+    }
+
+    @include respond(tab-port) {
+        // background-image: linear-gradient(to right,
+        //         rgba($color-primary-dark, .7) 0%,
+        //         rgba($color-black, .5) 100%),
+        //     url(../img/contactsmall.jpg);
+    }
+
+    &__form {
+        // width: 50%;
+        padding: 4rem;
+
+        // @include respond(tab-land) {
+        //     width: 65%;
+        // }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+
+        @include respond(phone) {
+            padding: 4rem 2rem;
+        }
+    }
+}
+
+
+.section-form {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom,
+            rgba($color-grey-light-1, 0.1),
+            rgba($color-grey-dark-3, 0.4));
+    background-size: cover;
+    transform: skewY(-9deg);
+    position: relative;
+    margin-top: 20rem;
+    
+    @include respond(phone) {
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    &>* {
+        transform: skewY(9deg);
+    }
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
+    .contact-wrap {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        top: 14%;
+        left: 0;
+        width: 45%;
+
+        @include respond(tab-port) {
+            width: 60%;
+        }
+
+        @include respond(phone) {
+            position: unset;
+            width: 69%;
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,176 @@
+.loader.hidden {
+    animation: fadeOut 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.circles {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0rem;
+    height: 0rem;
+
+    span {
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50rem;
+        margin: 10rem;
+
+        &:nth-child(1) {
+            top: 0;
+            left: 0;
+            background: linear-gradient(to right bottom,
+                rgba($color-primary, 1),
+                rgba($color-primary-light, 1));
+        }
+
+        &:nth-child(2) {
+            top: 0;
+            right: 0;
+            background: linear-gradient(to left top,
+                rgba($color-primary, 1),
+                rgba($color-primary-light, 1));
+        }
+
+        &:nth-child(3) {
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(to right top,
+                rgba($color-primary, 1),
+                rgba($color-primary-light, 1));
+        }
+
+        &:nth-child(4) {
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(to left bottom,
+                rgba($color-primary, 1),
+                rgba($color-primary-light, 1));
+        }
+
+    }
+
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    // background-image: linear-gradient(to right bottom,
+    // rgba($color-primary-dark, 0.9),
+    // rgba($color-black, 0.87)),
+    // url(../../img/architecture4.jpg);
+    background-image: linear-gradient(to right bottom,
+        ($color-primary-dark),
+        ($color-black));
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+
+    .scss-loader {
+        position: absolute;
+        @include absCenter;
+        width: 18rem;
+        height: 18rem;
+        box-sizing: border-box;
+
+        .face {
+            position: absolute;
+            border: 0.2rem solid $color-primary-dark;
+
+            &.faceone {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-left: 0.2rem solid $color-primary;
+                border-top: 0.2rem solid $color-primary;
+                background-image: linear-gradient(to left top,
+                    ($color-black),
+                    ($color-primary-dark));
+                border-radius: 50%;
+                animation: inCircle 3s linear infinite;
+
+                .circle {
+                    transform: rotate(-45deg);
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 1rem;
+                        height: 1rem;
+                        border-radius: 50%;
+                        background: $color-primary;
+                        top: -0.4rem;
+                        right: -0.6rem;
+                    }
+                }
+            }
+
+            &.facetwo {
+                top: 5rem;
+                left: 5rem;
+                right: 5rem;
+                bottom: 5rem;
+                background-image: linear-gradient(to right top,
+                    ($color-black),
+                    ($color-primary-dark));
+                border-right: 0.2rem solid $color-primary-light;
+                border-bottom: 0.2rem solid $color-primary-light;
+                border-radius: 50%;
+                animation: inCircle 1.5s linear reverse infinite;
+
+                .circle {
+                    transform: rotate(-45deg);
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 1rem;
+                        height: 1rem;
+                        border-radius: 50%;
+                        background: $color-primary-light;
+                        top: -0.4rem;
+                        right: -0.6rem;
+                    }
+                }
+            }
+
+            .circle {
+                position: absolute;
+                top: calc(50% - 0.5rem);
+                left: 50%;
+                width: 50%;
+                height: 1rem;
+                transform-origin: left;
+
+            }
+        }
+    }
+}
+
+// ScrollUp
+
+.scrollup {
+    color: rgba($color-primary-dark, 0.8);
+    font-size: 4rem;
+    text-align: center;
+    position: fixed;
+    display: none;
+    bottom: 4rem;
+    right: 4rem;
+    transition: color 0.6s ease-in-out;
+    z-index: 100000;
+    cursor: pointer;
+}
+
+.scrollup:hover {
+    color: $color-primary;
+}

@@ -1,0 +1,175 @@
+.navigation-padding {
+    padding-top: 10rem;
+
+    @include respond(phone) {
+        text-align: center;
+        margin-top: -20rem;
+    }
+
+    @include respond(tab-port) {
+        text-align: center;
+        margin-top: -15rem;
+    }
+}
+
+.navigation-footer {
+
+    padding: 10rem 0;
+    background-image: linear-gradient(to left bottom,
+        rgba($color-black, 0.9),
+        rgba($color-primary-dark, 0.9)),
+        url(../img/backgroundsecond.jpg);
+    transform: skewY(-9deg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+    color: $color-primary;
+    
+
+    &>* {
+        transform: skewY(9deg);
+    }
+
+
+
+    ul {
+        list-style: none;
+        margin-right: 2rem;
+        width: 100%;
+
+        @include respond(phone) {
+            display: block;
+            margin: 0 auto;
+
+        }
+
+        @include respond(tab-port) {
+            display: block;
+            margin: 0 auto;
+        }
+
+        @include respond(tab-land) {
+            display: block;
+            margin-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            justify-content: flex-start;
+
+            a {
+                color: $color-white;
+                font-size: 1.6rem;
+                text-decoration: none;
+                transition: all .4s ease-in-out;
+                text-align: left;
+                border-bottom: .2rem solid $color-primary-dark;
+                margin-right: 1.5rem;
+
+
+                &:hover {
+                    color: $color-grey-light-2;
+                    border-bottom: .2rem solid $color-primary;
+                }
+            }
+        }
+    }
+
+    .phone-and-mail {
+        ul {
+            margin: 0;
+
+            li {
+
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        @include respond(phone) {
+            text-align: center;
+
+        }
+
+        @include respond(tab-port) {
+            text-align: center;
+        }
+
+        text-align: left;
+
+        .green {
+            color: $color-primary;
+        }
+
+
+        span {
+            font-size: 1.3rem;
+            color: $color-white;
+
+            a {
+                color: $color-white;
+                font-size: 1.3rem;
+            }
+        }
+
+        &__icons {
+            font-size: 1.5rem;
+            margin-right: .2rem;
+        }
+
+
+    }
+
+    .copy {
+        text-align: right;
+
+        @include respond(phone) {
+            text-align: center;
+
+        }
+
+        @include respond(tab-port) {
+            text-align: center;
+        }
+
+
+        h4 {
+            color: $color-white;
+            font-size: 1.3rem;
+            font-family: 'Courgette', cursive;
+            letter-spacing: 0.2rem;
+
+
+        }
+    }
+
+    .icons {
+        text-align: right;
+        color: $color-primary-light;
+
+        @include respond(phone) {
+            text-align: center;
+
+        }
+
+        @include respond(tab-port) {
+            text-align: center;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: $color-white;
+            padding: 0 1rem;
+            font-size: 2.6rem;
+            transition: .4s ease-in-out;
+
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+
+    }
+
+}

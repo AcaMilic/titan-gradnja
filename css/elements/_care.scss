@@ -1,0 +1,108 @@
+.titancare-banner {
+    margin: 0 auto;
+    max-width: 114rem;
+    padding-top: 550px;
+    padding-bottom: 120px;
+
+    .portfolio_image_wrap {
+        position: absolute;
+        top: 55vh;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        height: 650px;
+        text-align: center;
+        z-index: 999;
+        width: 55vw;
+        overflow: hidden;
+        box-shadow: 0px 0px 23px 0px #292929;
+
+        .portfolio_image {
+            width: 100%;
+        }
+    }
+
+    .care_title {
+        margin-top: 2.5rem;
+        text-align: center;
+        font-size: 5.5rem;
+        font-weight: bold;
+    }
+
+    .care_subtitle {
+        font-size: 1.5rem;
+        max-width: 50vw;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1.7rem;
+    }
+}
+
+.titancare-paralax {
+    background: linear-gradient(rgba($color-primary-dark, 0.7), rgba($color-primary-dark, 0.7)), url(../../img/care.jpg) center/cover fixed no-repeat;
+    height: 400px;
+
+    .paralax-wrap {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .paralax-heading {
+            text-align: center;
+            font-size: 5.2rem;
+            font-weight: bold;
+            text-shadow: 0 0 5px #1d1d1d;
+            color: white;
+        }
+
+        .paralax-btn {
+            text-align: center;
+            padding: 1rem 3.8rem;
+            margin-top: 3rem;
+            font-size: 2.6rem;
+        }
+    }
+}
+
+.titancare-numbers-wrap {
+    margin-bottom: 15rem;
+
+    .numbers-title-wrap {
+        background: $color-primary-dark;
+
+        .numbers-title {
+            margin: 0 auto;
+            max-width: 114rem;
+            font-size: 4rem;
+            padding: 1.6rem 0;
+            color: #b3b3b3;
+        }
+    }
+
+    .numbers {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 114rem;
+        color: $color-primary-dark;
+
+        .single-number {
+
+            .digit {
+                text-align: center;
+                display: block;
+                min-width: 110px;
+                font-size: 8rem;
+            }
+
+            .number-title {
+                text-align: center;
+                font-size: 1.7rem;
+                min-width: 110px;
+            }
+        }
+    }
+}

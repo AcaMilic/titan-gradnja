@@ -1,0 +1,41 @@
+// COLORS
+$color-logo: rgb(103, 202, 136);
+$color-primary: #4272A5;
+$color-primary-lighter: rgb(60, 228, 183);
+$color-primary-light: #008ec3;
+$color-primary-dark: #00223e;
+
+$color-primary-mix-light: linear-gradient($color-primary-light, $color-primary);
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-light-3: #cdcfcb;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-medium: rgb(88, 88, 88);
+$color-grey-dark-3: #333;
+
+$color-logo: rgba(0, 0, 0, 0.1);
+
+
+$color-white: #F4F4ED;
+$color-black: #000;
+
+
+// FONT
+$default-font-size: 1.5rem;
+
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+
+// loader
+
+$size: 20rem;
+
+$sizecircle: 2rem;

@@ -1,0 +1,311 @@
+#about_me_gradnja {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    margin-bottom: 13rem;
+    // background-image: linear-gradient(to bottom left,
+    //   rgba($color-grey-light-3, 0.7),
+    //   rgba($color-white, 0.8));
+    // #icon-contrast {
+    //   display: inline-block;
+    //   width: 1em;
+    //   height: 1em;
+    //   stroke-width: 2rem;
+    //   stroke: $color-primary-dark;
+    //   fill: $color-primary;
+    // }
+  
+    .content {
+      p {
+        color: $color-primary-dark;
+      }
+      
+    @include respond(tab-land) {
+      margin-left: 6rem;
+    } 
+    @include respond(tab-port) {
+  
+      margin: 0;
+    } 
+    }
+  
+    .heading-secondary {
+      @include respond(phone) {
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+      }
+  
+    }
+    .logo_titan{
+      img{
+        max-width: 100%;
+        // margin-left: 15rem;
+  
+        @include respond(tab-land) {
+          width: 80%;
+          margin-top: 6rem;
+        } 
+        @include respond(tab-port) {
+          width: 100%;
+          // margin: 0;
+        } 
+      }
+  
+    }
+  
+    @include respond(tab-land) {
+      padding-bottom: 20rem;
+    }
+  
+    p {
+      color: $color-primary-dark;
+      font-size: $default-font-size;
+    }
+  
+  }
+  .about_us{
+    margin: 15rem 0 25rem 0;
+    .intro {
+      position: relative;
+      .bg-faded {
+        background-image: linear-gradient(to right bottom,
+        rgba($color-primary-dark, 0.9),
+        rgba($color-black, 0.8));
+      }
+      .content{
+        p{
+          text-align: left;
+          color: $color-grey-light-1;
+          font-size: 1.2rem;
+          margin-bottom: 2.6rem;
+        }
+      }
+      @media (min-width: 992px) {
+        .intro-img {
+          box-shadow: 1.2rem 1.5rem 2rem rgba(0, 34, 62, 0.2);
+          width: 80%;
+          float: right;
+          transition: .3s ease-in-out;
+  
+          &:hover{
+          box-shadow: .6rem .6rem .6rem rgba(0, 34, 62, 0.2);
+            
+          }
+        }
+        .intro-text {
+          left: 0;
+          width: 60%;
+          margin-top: 9rem;
+          position: absolute;
+  
+          .intro-button {
+            width: 100%;
+            left: 0;
+            position: absolute;
+            bottom: -2rem;
+            text-decoration: none;
+          }
+        }
+      }
+    
+    }
+  }
+  .titangradnja-banner {
+    margin: 0 auto;
+    max-width: 114rem;
+    padding-top: 550px;
+    padding-bottom: 120px;
+
+    .portfolio_image_wrap {
+        position: absolute;
+        top: 55vh;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        height: 650px;
+        text-align: center;
+        z-index: 999;
+        width: 55vw;
+        overflow: hidden;
+        box-shadow: 0px 0px 23px 0px #292929;
+
+        .portfolio_image {
+            width: 100%;
+        }
+    }
+
+    .care_title {
+        margin-top: 2.5rem;
+        text-align: center;
+        font-size: 5.5rem;
+    }
+
+    .care_subtitle {
+        font-size: 1.5rem;
+        max-width: 50vw;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1.7rem;
+    }
+}
+.titangradnja-paralax {
+  background: linear-gradient(rgba($color-primary-dark, 0.7), rgba($color-primary-dark, 0.7)), url(../../img/machinery.jpg) center/cover fixed no-repeat;
+  height: 400px;
+
+  .paralax-wrap {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .paralax-heading {
+          text-align: center;
+          font-size: 5.2rem;
+          font-weight: bold;
+          text-shadow: 0 0 5px #1d1d1d;
+          color: white;
+      }
+
+      .paralax-btn {
+          text-align: center;
+          padding: 1rem 3.8rem;
+          margin-top: 3rem;
+          font-size: 2.6rem;
+      }
+  }
+}
+.gallery_header{
+  h3{
+    font-size: 3rem;
+    text-align: center;
+    color: $color-primary-dark;
+    margin: 5rem 0;
+  }
+}
+.gallery_wrapper{
+  display: grid;
+  width: 1200px;
+  max-width: 100%;
+  height: 90vh;
+  margin: 10rem auto;
+  grid-gap: .5rem;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(6, 1fr);
+  padding: .5rem;
+ 
+  @include respond(tab-port) {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
+  } 
+  @include respond(phone) {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    position: relative;
+    height: auto;
+  } 
+
+
+
+  .box{
+    background: $color-primary-dark;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+  .one{
+    grid-column: span 3;
+    grid-row: span 3;
+    background-image: url(../../img/archive.jpg);
+
+    @include respond(tab-port) {
+      grid-column: span 1;
+      grid-row: span 1;
+      } 
+      @include respond(phone) {
+        width: 100%;
+        height: 50vh;
+        margin: 0 auto;
+      } 
+  }
+  .two{
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url(../../img/architecture2.jpg);
+    
+    @include respond(tab-port) {
+      grid-column: span 1;
+      grid-row: span 1;
+      } 
+      @include respond(phone) {
+        width: 100%;
+        height: 50vh;
+        margin: 0 auto;
+      } 
+  }
+  .three{
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 3;
+    background-image: url(../../img/architecture3.jpg);
+
+    @include respond(tab-port) {
+      grid-column: span 1;
+      grid-row: span 1;
+      } 
+      @include respond(phone) {
+        width: 100%;
+        height: 50vh;
+        margin: 0 auto;
+      } 
+  }
+  .four{
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 2;
+    background-image: url(../../img/architecture4.jpg);
+
+    @include respond(tab-port) {
+      grid-column: span 1;
+      grid-row: span 1;
+      } 
+      @include respond(phone) {
+        width: 100%;
+        height: 50vh;
+        margin: 0 auto;
+      } 
+  }
+  .five{
+    grid-column: 4 / span 2;
+    grid-row: 3 / span 3;
+    background-image: url(../../img/archivee.jpg);
+
+    @include respond(tab-port) {
+      grid-column: span 1;
+      grid-row: span 1;
+      } 
+      @include respond(phone) {
+        width: 100%;
+        height: 50vh;
+        margin: 0 auto;
+      } 
+
+
+  }
+  .six{
+    grid-column: span 3;
+    grid-row: span 2;
+    background-image: url(../../img/tree.jpg);
+
+
+    @include respond(tab-port) {
+      grid-column: span 1;
+      grid-row: span 1;
+      } 
+      @include respond(phone) {
+        width: 100%;
+        height: 50vh;
+        margin: 0 auto;
+      } 
+  }
+}
+
