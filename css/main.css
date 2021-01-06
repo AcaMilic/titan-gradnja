@@ -1907,7 +1907,7 @@ nav .menu-icon {
 }
 
 .card__side {
-  height: 52rem;
+  height: 54rem;
   -webkit-transition: all .8s ease;
   transition: all .8s ease;
   position: absolute;
@@ -1924,36 +1924,6 @@ nav .menu-icon {
   background-color: #F4F4ED;
 }
 
-.card__side--back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.card__side--back-1 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#008ec3), to(#00223e));
-  background-image: linear-gradient(to right bottom, #008ec3, #00223e);
-}
-
-.card__side--back-2 {
-  background-image: -webkit-gradient(linear, right top, left bottom, from(#00223e), to(#008ec3));
-  background-image: linear-gradient(to left bottom, #00223e, #008ec3);
-}
-
-.card__side--back-3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#008ec3), to(#00223e));
-  background-image: linear-gradient(to right bottom, #008ec3, #00223e);
-}
-
-.card:hover .card__side--front {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-}
-
-.card:hover .card__side--back {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-}
-
 .card__picture {
   background-size: cover;
   height: 23rem;
@@ -1965,23 +1935,23 @@ nav .menu-icon {
 }
 
 .card__picture--1 {
-  background-image: url(../../img/treatment.jpg);
+  background-image: url(../../img/architecture.jpg);
 }
 
 .card__picture--2 {
-  background-image: url(../../img/industrial.png);
+  background-image: url(../../img/architecture2.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .card__picture--3 {
-  background-image: url(../img/book.jpg);
+  background-image: url(../../img/architecture3.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .card__heading {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 300;
   text-transform: uppercase;
   text-align: right;
@@ -2015,63 +1985,27 @@ nav .menu-icon {
 
 .card__details {
   padding: 3rem;
+  text-align: center;
 }
 
 .card__details p {
   font-size: 2rem;
   color: #4272A5;
   font-weight: 700;
+  text-align: left;
+}
+
+.card__details h2 {
+  font-size: 2rem;
+  color: #00223e;
+  text-transform: uppercase;
 }
 
 .card__details .small__text {
   padding-top: 1rem;
+  margin-bottom: 2rem;
   font-size: 1.5rem;
   color: #2a282a;
-}
-
-.card__details ul {
-  list-style: none;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.card__details ul li {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: .7rem;
-  color: #333;
-  letter-spacing: .2rem;
-}
-
-.card__details ul li:not(:last-child) {
-  border-bottom: 1px solid #cdcfcb;
-}
-
-.card__cta {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 90%;
-  text-align: center;
-}
-
-.card__portfolio-box {
-  text-align: center;
-  color: #F4F4ED;
-  margin-bottom: 8rem;
-}
-
-.card__portfolio-only {
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-}
-
-.card__portfolio-value {
-  font-size: 3rem;
-  font-weight: 100;
 }
 
 @media only screen and (max-width: 56.25em), only screen and (hover: none) {
@@ -2088,12 +2022,6 @@ nav .menu-icon {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .card__side--back {
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
-  }
   .card:hover .card__side--front {
     -webkit-transform: rotateY(0);
             transform: rotateY(0);
@@ -2101,20 +2029,8 @@ nav .menu-icon {
   .card__details {
     padding: 1rem 3rem;
   }
-  .card__cta {
-    position: relative;
-    top: 0%;
-    left: 0;
-    -webkit-transform: translate(0);
-            transform: translate(0);
-    width: 100%;
-    padding: 7rem 4rem 4rem 4rem;
-  }
-  .card__portfolio-box {
-    margin-bottom: 3rem;
-  }
-  .card__portfolio-value {
-    font-size: 4rem;
+  .card__details .btn--whitee {
+    margin-bottom: 2rem;
   }
 }
 

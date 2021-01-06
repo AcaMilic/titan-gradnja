@@ -15,7 +15,7 @@
     height: 52rem;
 
     &__side {
-        height: 52rem;
+        height: 54rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -32,35 +32,8 @@
             background-color: $color-white;
         }
 
-        &--back {
-            transform: rotateY(180deg);
-
-            &-1 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-            }
-
-            &-2 {
-                background-image: linear-gradient(to left bottom, $color-primary-dark, $color-primary-light);
-            }
-
-            &-3 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-
-            }
-        }
     }
 
-
-    &:hover &__side--front {
-        transform: rotateY(-180deg);
-
-    }
-
-    &:hover &__side--back {
-        transform: rotateY(0);
-
-
-    }
 
     // FRONT SIDE STYLING
     &__picture {
@@ -74,12 +47,12 @@
 
         &--1 {
             background-image:
-                url(../../img/treatment.jpg);
+                url(../../img/architecture.jpg);
         }
 
         &--2 {
             background-image:
-                url(../../img/industrial.png);
+                url(../../img/architecture2.jpg);
             // background-image:
             //     url(../../img/excavators.jpg);
             background-size: cover;
@@ -87,14 +60,14 @@
         }
 
         &--3 {
-            background-image: url(../img/book.jpg);
+            background-image: url(../../img/architecture3.jpg);
             background-size: cover;
             background-position: center;
         }
     }
 
     &__heading {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
         font-weight: 300;
         text-transform: uppercase;
         text-align: right;
@@ -132,64 +105,28 @@
 
     &__details {
         padding: 3rem;
+        text-align: center;
 
         p {
             font-size: 2rem;
             color: $color-primary;
             font-weight: 700;
+            text-align: left;
 
+        }
+        h2{
+            font-size: 2rem;
+            color: $color-primary-dark;
+            text-transform: uppercase;
         }
         .small__text{
             padding-top: 1rem;
+            margin-bottom: 2rem;
             font-size: 1.5rem;
             color: #2a282a;
         }
-
-        ul {
-            list-style: none;
-            width: 80%;
-            margin: 0 auto;
-
-            li {
-                text-align: center;
-                font-size: 1.5rem;
-                padding: .7rem;
-                color: $color-grey-dark-3;
-                letter-spacing: .2rem;
-
-                &:not(:last-child) {
-                    border-bottom: 1px solid $color-grey-light-3;
-                }
-            }
-        }
     }
 
-    // FRONT SIDE STYLING
-    &__cta {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        text-align: center;
-    }
-
-    &__portfolio-box {
-        text-align: center;
-        color: $color-white;
-        margin-bottom: 8rem;
-    }
-
-    &__portfolio-only {
-        font-size: 1.4rem;
-        margin-bottom: 2rem;
-        text-transform: uppercase;
-    }
-
-    &__portfolio-value {
-        font-size: 3rem;
-        font-weight: 100;
-    }
 
     //@include respond(tab-port) {
     @media only screen and (max-width: 56.25em),
@@ -205,10 +142,7 @@
             position: relative;
             box-shadow: none;
 
-            &--back {
-                transform: rotateY(0);
-                clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
-            }
+
         }
 
         &:hover &__side--front {
@@ -218,25 +152,14 @@
 
         &__details {
             padding: 1rem 3rem;
+
+            .btn--whitee{
+                margin-bottom: 2rem;
+            }
         }
 
         // FRONT SIDE STYLING
-        &__cta {
-            position: relative;
-            top: 0%;
-            left: 0;
-            transform: translate(0);
-            width: 100%;
-            padding: 7rem 4rem 4rem 4rem;
-        }
 
-        &__portfolio-box {
-            margin-bottom: 3rem;
-        }
-
-        &__portfolio-value {
-            font-size: 4rem;
-        }
     }
 
 }

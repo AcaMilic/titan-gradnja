@@ -32,10 +32,10 @@ $(document).ready(function () {
 // });
 
 
-window.addEventListener("load", function () {
-  const loader = document.querySelector(".loader");
-  loader.className += " hidden"; // class "loader hidden"
-});
+// window.addEventListener("load", function () {
+//   const loader = document.querySelector(".loader");
+//   loader.className += " hidden"; // class "loader hidden"
+// });
 
 $('a[href*="#"]')
   .not('[href="#"]')
