@@ -32,6 +32,7 @@ $(document).ready(function () {
 // });
 
 
+
 // window.addEventListener("load", function () {
 //   const loader = document.querySelector(".loader");
 //   loader.className += " hidden"; // class "loader hidden"
@@ -147,3 +148,27 @@ $(document).ready(function(){
     $(".services-links").slideDown();
   });
 });
+
+// OWL carousel
+
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin:0,
+  nav:false,
+  center:true,
+  responsiveClass: true,
+  responsive:{
+    0:{
+      items:1,
+      nav: false
+    },
+    600:{
+      items:3,
+      nav: false
+    },
+    1000:{
+      items:3,
+      nav: false
+    }
+  }
+})
