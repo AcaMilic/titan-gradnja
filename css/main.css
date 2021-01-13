@@ -3177,20 +3177,6 @@ nav .menu-icon {
   }
 }
 
-<<<<<<< HEAD
-.project .project_title {
-  margin-top: 2.5rem;
-  text-align: center;
-  font-size: 5.5rem;
-}
-
-.project .project_subtitle {
-  font-size: 1.5rem;
-  max-width: 50vw;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 1.7rem;
-=======
 .partneri {
   margin-top: 5rem;
   margin-bottom: 20rem;
@@ -3335,6 +3321,5 @@ nav .menu-icon {
   .modal-dialog {
     max-width: 650px;
   }
->>>>>>> fr-partneri
 }
 /*# sourceMappingURL=main.css.map */
