@@ -156,6 +156,7 @@ $('.owl-carousel').owlCarousel({
   margin:0,
   nav:false,
   center:true,
+  dots: false,
   responsiveClass: true,
   responsive:{
     0:{

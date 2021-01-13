@@ -14,7 +14,16 @@
   <!-- <link rel="stylesheet" href="css/sal/sal.css"> -->
   <link rel="stylesheet" href="css/main.css" />
   <link rel="shortcut icon" type="image/png" href="img/titan-concept-test-5.png" />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
   <title>Titan Gradnja</title>
+  <style>
+    #map {
+      width: 100%;
+      margin-top: 3rem;
+      height: 45vh;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -50,69 +59,38 @@
         <span class="heading-primary--sub">Novogradnja Mirijevo</span>
       </h1> 
     </div>
-<!-- <section class="portfolio_block">
-    <div class="gallery">
-        <div class="img_box"><img src="img/architecture.jpg"></div>
-        <div class="img_box"><img src="img/architecture2.jpg"></div>
-        <div class="img_box"><img src="img/architecture3.jpg"></div>
-        <div class="img_box"><img src="img/architecture4.jpg"></div>
-        <div class="img_box"><img src="img/architecture3.jpg"></div>
-        <div class="img_box"><img src="img/architecture2.jpg"></div>
-        <div class="img_box"><img src="img/architecture.jpg"></div>
-        <div class="img_box"><img src="img/architecture4.jpg"></div>
-    </div>
-</section> -->
-  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block" src="img/architecture.jpg" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block" src="img/architecture2.jpg" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block" src="img/architecture3.jpg" alt="Third slide">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div> -->
+  </header>
 
-</header>
-
-<div class="container-fluid blue">
-  <div class="owl-carousel owl-theme">
-    <div class="img_box">
-      <img src="img/architecture4.jpg" alt="">
-    </div>
-    <div class="img_box">
-      <img src="img/architecture.jpg" alt="">
-    </div>
-    <div class="img_box">
-      <img src="img/architecture3.jpg" alt="">
-    </div>
-    <div class="img_box">
-      <img src="img/architecture2.jpg" alt="">
-    </div>
-    <div class="img_box">
-      <img src="img/architecture.jpg" alt="">
-    </div>
-    <div class="img_box">
-      <img src="img/architecture3.jpg" alt="">
+  <div class="container-fluid">
+    <div class="owl-carousel owl-theme">
+      <div class="img_box">
+        <img src="img/architecture4.jpg" alt="">
+      </div>
+      <div class="img_box">
+        <img src="img/architecture.jpg" alt="">
+      </div>
+      <div class="img_box">
+        <img src="img/architecture3.jpg" alt="">
+      </div>
+      <div class="img_box">
+        <img src="img/architecture2.jpg" alt="">
+      </div>
+      <div class="img_box">
+        <img src="img/architecture.jpg" alt="">
+      </div>
+      <div class="img_box">
+        <img src="img/architecture3.jpg" alt="">
+      </div>
     </div>
   </div>
-</div>
+
+  <section class="project">
+    <h1 class="project_title">Novogradnja Mirijevo</h1>
+    <p class="project_subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis iste eveniet provident nam consectetur distinctio laborum atque aliquam quas, alias, animi vitae adipisci architecto sapiente ab vel! Id earum totam laudantium. Velit quae, ullam voluptas ad culpa repellendus eligendi reprehenderit animi ea voluptatem quis consectetur autem aspernatur magnam exercitationem dolorem.</p>
+  </section>
+
+  <div id='map'></div>
+
   <!-- /HEader -->
 
   <!--/ Loader -->
@@ -124,5 +102,12 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidGl0YW5jb25jZXB0IiwiYSI6ImNranU3MGkwazFpb2syc2p4OWpzd3owdDgifQ.kmTsWTpcHYdMwbSG95tYQg';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/titanconcept/ckjbcqywna01x19p373n0jeug'
+      });
+  </script>
 </body>
 </html>

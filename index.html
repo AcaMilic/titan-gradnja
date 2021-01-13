@@ -11,6 +11,9 @@
   <!-- <link rel="stylesheet" href="css/sal/sal.css"> -->
   <link rel="stylesheet" href="css/main.css" />
   <link rel="shortcut icon" type="image/png" href="img/titan-concept-test-5.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+
   <title>Titan Gradnja</title>
 </head>
 <body>
@@ -168,13 +171,20 @@
 </div>
 
 <div class="gallery_wrapper">
-  <div class="box one"></div>
-  <div class="box two"></div>
-  <div class="box three"></div>
-  <div class="box four"></div>
-  <div class="box five"></div>
-  <div class="box six"></div>
+  <a data-fancybox="gallery" data-src="#hidden-content" href="javascript:;" class="box one" data-fancybox="gallery"></a>
+  <a href="#" class="box two" data-fancybox="gallery"></a>
+  <a href="#" class="box three" data-fancybox="gallery"></a>
+  <a href="#" class="box four" data-fancybox="gallery"></a>
+  <a href="#" class="box five" data-fancybox="gallery"></a>
+  <a href="#" class="box six" data-fancybox="gallery"></a>
 </div>
+
+
+<div style="display: none;" id="hidden-content">
+	<h2>Hello</h2>
+	<p>You are awesome.</p>
+</div>
+
 
 <!-- /Gallery -->
   <!-- Footer -->
@@ -217,6 +227,8 @@
   <!-- Day and night -->
   <div class="daynight"></div>
   <script src="js/jquery.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>  
+
 </body>
 </html>
