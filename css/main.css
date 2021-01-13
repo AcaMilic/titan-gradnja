@@ -3275,4 +3275,51 @@ nav .menu-icon {
 .partneri .our-team:hover .social {
   bottom: 0;
 }
+
+.modal-body {
+  background-color: #00223e;
+  padding: 3rem;
+}
+
+.modal-body .modalpicture img {
+  border-radius: 50%;
+}
+
+.modal-body .iks {
+  font-size: 2rem;
+  color: #F4F4ED;
+}
+
+.textinmodal {
+  color: #F4F4ED;
+}
+
+.textinmodal .intro-title {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+.textinmodal h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.textinmodal p {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+@media (max-width: 575px) {
+  .modal-body .col-sm-4 {
+    text-align: center;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 650px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

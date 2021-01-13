@@ -61,7 +61,7 @@
             <h4 class="title">Web Developer</h4>
           </div>
           <div class="social">
-            <a href="#" target="_blank" class="btn btn--white">More</a>
+            <a href="#"  data-target='#login' data-toggle='modal' class="btn btn--white">More</a>
           </div>
         </div>
       </div>
@@ -75,7 +75,33 @@
             <h4 class="title">Web Developer</h4>
           </div>
           <div class="social">
-            <a href="#" target="_blank" class="btn btn--white">More</a>
+            <a href="#" target="_blank" data-toggle="modal" data-target="#modalone" class="btn btn--white">More</a>
+            <!-- Modal -->
+            <div class="modal fade" id="modalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="iks">&times;</span>
+                    </button>
+                    </br>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 modalpicture">
+                        <img src="https://picsum.photos/130/130?image=839" alt="" width=100%/>
+                      </div>
+                      <div class="col-sm-6 align-self-center textinmodal"> 
+                        <h5 class="intro-title"> Patricia Knott </h5>
+                        <h3> Web Developer </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias deleniti vitae minus architecto amet veniam dolorem rerum quo id esse?</p>
+                      </div>          
+                    </div>  
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -175,11 +201,12 @@
       </div>
     </div>
     </footer>
+
   <!--/ Loader -->
   <!-- Scroll-to-Top -->
   <a href="#header" class="scrollup"><i class="far fa-arrow-alt-circle-up"></i></a>
-  <!-- Day and night -->
-  <div class="daynight"></div>
+
+
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
