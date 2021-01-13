@@ -68,76 +68,76 @@ body {
   color: #F4F4ED;
 }
 
-.row {
+.roww {
   max-width: 114rem;
   margin: 0 auto;
 }
 
-.row:not(:last-child) {
+.roww:not(:last-child) {
   margin-bottom: 8rem;
 }
 
 @media only screen and (max-width: 56.25em) {
-  .row:not(:last-child) {
+  .roww:not(:last-child) {
     margin-bottom: 6rem;
   }
 }
 
 @media only screen and (max-width: 56.25em) {
-  .row {
+  .roww {
     max-width: 55rem;
     padding: 0 3rem;
   }
 }
 
-.row::after {
+.roww::after {
   content: "";
   display: table;
   clear: both;
 }
 
-.row [class^="col-"] {
+.roww [class^="col-"] {
   float: left;
 }
 
-.row [class^="col-"]:not(:last-child) {
+.roww [class^="col-"]:not(:last-child) {
   margin-right: 6rem;
 }
 
 @media only screen and (max-width: 56.25em) {
-  .row [class^="col-"]:not(:last-child) {
+  .roww [class^="col-"]:not(:last-child) {
     margin-right: 0;
     margin-bottom: 6rem;
   }
 }
 
 @media only screen and (max-width: 56.25em) {
-  .row [class^="col-"] {
+  .roww [class^="col-"] {
     width: 100% !important;
   }
 }
 
-.row .col-1-of-2 {
+.roww .col-1-of-2 {
   width: calc((100% - 6rem) / 2);
 }
 
-.row .col-1-of-3 {
+.roww .col-1-of-3 {
   width: calc((100% - 2 * 6rem) / 3);
 }
 
-.row .col-2-of-3 {
+.roww .col-2-of-3 {
   width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
 }
 
-.row .col-1-of-4 {
+.roww .col-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
 }
 
-.row .col-2-of-4 {
+.roww .col-2-of-4 {
   width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
 }
 
-.row .col-3-of-4 {
+.roww .col-3-of-4 {
   width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
 }
 
@@ -1397,6 +1397,140 @@ nav .menu-icon {
           transform: scale(0.8);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.header_istorijat {
+  height: 120vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 34, 62, 0.2)), to(rgba(0, 0, 0, 0.9))), url(../../img/berlin.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 34, 62, 0.2), rgba(0, 0, 0, 0.9)), url(../../img/berlin.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header_istorijat .heading-primary--sub {
+  font-size: 4rem;
+}
+
+@supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
+  .header_istorijat {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 90%, 0 80%, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 95%, 0 80%, 0 0);
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 175em) {
+  .header_istorijat {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 142, 195, 0.8)), to(rgba(0, 34, 62, 0.8)));
+    background-image: linear-gradient(to right bottom, rgba(0, 142, 195, 0.8), rgba(0, 34, 62, 0.8));
+  }
+}
+
+.header_istorijat .header__portfolio {
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100vw;
+  height: 20vh;
+  text-align: center;
+}
+
+.header_istorijat .text-box__istorijat {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header_istorijat .text-box__istorijat .btn--whitee {
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header_istorijat .text-box__istorijat {
+    top: 20%;
+    width: 100%;
+  }
+}
+
+.header_istorijat .header-istorijat {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70%;
+  text-align: center;
+  color: #F4F4ED;
+  font-size: 2rem;
+}
+
+.header_partneri {
+  height: 120vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 34, 62, 0.5)), to(rgba(0, 0, 0, 0.9))), url(../../img/adventure.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 34, 62, 0.5), rgba(0, 0, 0, 0.9)), url(../../img/adventure.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header_partneri .heading-primary--sub {
+  font-size: 4rem;
+}
+
+@supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
+  .header_partneri {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 90%, 0 80%, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 95%, 0 80%, 0 0);
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 175em) {
+  .header_partneri {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 142, 195, 0.8)), to(rgba(0, 34, 62, 0.8)));
+    background-image: linear-gradient(to right bottom, rgba(0, 142, 195, 0.8), rgba(0, 34, 62, 0.8));
+  }
+}
+
+.header_partneri .header__portfolio {
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100vw;
+  height: 20vh;
+  text-align: center;
+}
+
+.header_partneri .text-box__istorijat {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header_partneri .text-box__istorijat .btn--whitee {
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header_partneri .text-box__istorijat {
+    top: 20%;
+    width: 100%;
+  }
 }
 
 #about_me {
@@ -3043,6 +3177,7 @@ nav .menu-icon {
   }
 }
 
+<<<<<<< HEAD
 .project .project_title {
   margin-top: 2.5rem;
   text-align: center;
@@ -3055,5 +3190,151 @@ nav .menu-icon {
   text-align: center;
   margin: 0 auto;
   margin-top: 1.7rem;
+=======
+.partneri {
+  margin-top: 5rem;
+  margin-bottom: 20rem;
+  max-width: 120rem;
+}
+
+.partneri .our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background-color: #00223e;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.partneri .our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.partneri .our-team .picture:before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+.partneri .our-team .picture:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #F4F4ED;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.partneri .our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.9s ease 0s;
+  transition: all 0.9s ease 0s;
+}
+
+.partneri .our-team:hover .picture::before {
+  height: 100%;
+}
+
+.partneri .our-team:hover .picture img {
+  -webkit-box-shadow: 0 0 0 18px #00223e;
+          box-shadow: 0 0 0 18px #00223e;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.partneri .our-team .title {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  color: #F4F4ED;
+  text-transform: capitalize;
+}
+
+.partneri .our-team .social {
+  width: 100%;
+  padding: 1rem;
+  margin: 0;
+  background-color: #00223e;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.partneri .our-team:hover .social {
+  bottom: 0;
+}
+
+.modal-body {
+  background-color: #00223e;
+  padding: 3rem;
+}
+
+.modal-body .modalpicture img {
+  border-radius: 50%;
+}
+
+.modal-body .iks {
+  font-size: 2rem;
+  color: #F4F4ED;
+}
+
+.textinmodal {
+  color: #F4F4ED;
+}
+
+.textinmodal .intro-title {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+.textinmodal h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.textinmodal p {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+@media (max-width: 575px) {
+  .modal-body .col-sm-4 {
+    text-align: center;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 650px;
+  }
+>>>>>>> fr-partneri
 }
 /*# sourceMappingURL=main.css.map */
