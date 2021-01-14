@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta author="Titan Concept team" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <!-- Owl -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!-- <link rel="stylesheet" href="css/sal/sal.css"> -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="shortcut icon" type="image/png" href="img/titan-concept-test-5.png" />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+  <title>Titan Gradnja</title>
+  <style>
+    #map {
+      width: 100%;
+      margin-top: 3rem;
+      height: 45vh;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__portfolio">
+    </div>
+    <nav class="about_nav">
+      <div class="menu-icon">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
+      <div class="menu">
+        <ul>
+          <div class="logo">
+            <img src="img/titan-c-logo-white.png" alt="logo">
+          </div>
+           <li><a href="index.html" class="">Početna</a></li>
+          <li><a href="about.html" class="">O nama</a></li>
+          <li><a href="istorijat.html" class="">Istorijat</a></li>
+          <li><a href="novi_projekti.html"><img src="img/serbia.png" alt="">Novi projekti</a></li>
+          <li><a href="partneri.html"><img src="img/united-kingdom.png" alt="">Partneri</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header__text-box">
+       <h1 class="heading-primary">
+        <span class="heading-primary--sub">Novogradnja</span>
+      </h1> 
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="owl-carousel owl-theme">
+      <div class="img_box">
+        <img src="img/architecture4.jpg" alt="">
+      </div>
+      <div class="img_box">
+        <img src="img/architecture.jpg" alt="">
+      </div>
+      <div class="img_box">
+        <img src="img/architecture3.jpg" alt="">
+      </div>
+      <div class="img_box">
+        <img src="img/architecture2.jpg" alt="">
+      </div>
+      <div class="img_box">
+        <img src="img/architecture.jpg" alt="">
+      </div>
+      <div class="img_box">
+        <img src="img/architecture3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <section class="project">
+    <h1 class="project_title">Novogradnja</h1>
+    <p class="project_subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis iste eveniet provident nam consectetur distinctio laborum atque aliquam quas, alias, animi vitae adipisci architecto sapiente ab vel! Id earum totam laudantium. Velit quae, ullam voluptas ad culpa repellendus eligendi reprehenderit animi ea voluptatem quis consectetur autem aspernatur magnam exercitationem dolorem.</p>
+  </section>
+
+  <div id='map'></div>
+
+  <!-- /HEader -->
+
+  <!--/ Loader -->
+  <!-- Scroll-to-Top -->
+  <a href="#header" class="scrollup"><i class="far fa-arrow-alt-circle-up"></i></a>
+  <!-- Day and night -->
+  <div class="daynight"></div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidGl0YW5jb25jZXB0IiwiYSI6ImNranU3MGkwazFpb2syc2p4OWpzd3owdDgifQ.kmTsWTpcHYdMwbSG95tYQg';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/titanconcept/ckjbcqywna01x19p373n0jeug'
+      });
+  </script>
+</body>
+</html>
