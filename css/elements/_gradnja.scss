@@ -175,137 +175,54 @@
       }
   }
 }
-.gallery_header{
-  h3{
-    font-size: 3rem;
+
+// GALLERY
+
+
+.gallery-container{
+  h2 {
     text-align: center;
-    color: $color-primary-dark;
     margin: 5rem 0;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
   }
-}
-.gallery_wrapper{
-  display: grid;
-  width: 1200px;
-  max-width: 100%;
-  height: 90vh;
-  margin: 10rem auto;
-  grid-gap: .5rem;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(6, 1fr);
-  padding: .5rem;
- 
-  @include respond(tab-port) {
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3, 1fr);
-  } 
-  @include respond(phone) {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    position: relative;
-    height: auto;
-  } 
-
-
-
-  .box{
-    background: $color-primary-dark;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-  }
-  .one{
-    grid-column: span 3;
-    grid-row: span 3;
-    background-image: url(../../img/archive.jpg);
-
-    @include respond(tab-port) {
-      grid-column: span 1;
-      grid-row: span 1;
-      } 
-      @include respond(phone) {
-        width: 100%;
-        height: 50vh;
-        margin: 0 auto;
-      } 
-  }
-  .two{
-    grid-column: span 2;
-    grid-row: span 2;
-    background-image: url(../../img/architecture2.jpg);
-    
-    @include respond(tab-port) {
-      grid-column: span 1;
-      grid-row: span 1;
-      } 
-      @include respond(phone) {
-        width: 100%;
-        height: 50vh;
-        margin: 0 auto;
-      } 
-  }
-  .three{
-    grid-column: 1 / span 2;
-    grid-row: 4 / span 3;
-    background-image: url(../../img/architecture3.jpg);
-
-    @include respond(tab-port) {
-      grid-column: span 1;
-      grid-row: span 1;
-      } 
-      @include respond(phone) {
-        width: 100%;
-        height: 50vh;
-        margin: 0 auto;
-      } 
-  }
-  .four{
-    grid-column: 3 / span 1;
-    grid-row: 4 / span 2;
-    background-image: url(../../img/architecture4.jpg);
-
-    @include respond(tab-port) {
-      grid-column: span 1;
-      grid-row: span 1;
-      } 
-      @include respond(phone) {
-        width: 100%;
-        height: 50vh;
-        margin: 0 auto;
-      } 
-  }
-  .five{
-    grid-column: 4 / span 2;
-    grid-row: 3 / span 3;
-    background-image: url(../../img/archivee.jpg);
-
-    @include respond(tab-port) {
-      grid-column: span 1;
-      grid-row: span 1;
-      } 
-      @include respond(phone) {
-        width: 100%;
-        height: 50vh;
-        margin: 0 auto;
-      } 
-
-
-  }
-  .six{
-    grid-column: span 3;
-    grid-row: span 2;
-    background-image: url(../../img/tree.jpg);
-
-
-    @include respond(tab-port) {
-      grid-column: span 1;
-      grid-row: span 1;
-      } 
-      @include respond(phone) {
-        width: 100%;
-        height: 50vh;
-        margin: 0 auto;
-      } 
-  }
+  margin-bottom: 10rem;  
+  margin-top: 10rem;
 }
 
+.tz-gallery {
+  padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+  padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+  width: 100%;
+  border-radius: 0;
+  position: relative;
+}
+
+.tz-gallery .lightbox:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba($color-primary-dark, 0.7);
+  content: '';
+  transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+  opacity: 1;
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
