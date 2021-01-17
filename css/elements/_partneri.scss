@@ -4,7 +4,7 @@ margin-top: 5rem;
 margin-bottom: 20rem;
 max-width: 120rem;
 .our-team {
-        padding: 30px 0 40px;
+        padding: 30px 0 70px;
         margin-bottom: 30px;
         border-radius: 5px;
         background-color: $color-primary-dark;
@@ -26,7 +26,7 @@ max-width: 120rem;
             &:before {
                 content: "";
                 width: 100%;
-                height: 0;
+                height: 100%;
                 border-radius: 50%;
                 background-color: $color-grey-light-1;
                 position: absolute;
@@ -77,17 +77,13 @@ max-width: 120rem;
           }
           .social {
             width: 100%;
-            padding: 1rem;
+            // padding: 1rem;
             margin: 0;
             background-color:  $color-primary-dark;
             position: absolute;
-            bottom: -100px;
-            left: 0;
-            transition: all 0.5s ease 0s;
-          }
-    
-          &:hover .social {
-            bottom: 0;
+            // bottom: -100px;
+            // left: 0;
+            // transition: all 0.5s ease 0s;
           }
           
       }

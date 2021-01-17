@@ -127,6 +127,11 @@ nav {
         // animation-delay: 2s;
         // transition: color 0.4s ease-in-out;
 
+        @media all and (max-width: 2560px) {
+	
+            width: 21%;
+        }
+
         img {
             width: 40%;
         }

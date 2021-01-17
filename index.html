@@ -6,13 +6,12 @@
   <meta author="Titan Concept team" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <!-- Bootstrap core CSS -->
-  <!-- <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   <!-- <link rel="stylesheet" href="css/sal/sal.css"> -->
   <link rel="stylesheet" href="css/main.css" />
   <link rel="shortcut icon" type="image/png" href="img/titan-concept-test-5.png" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-
 
   <title>Titan Gradnja</title>
 </head>
@@ -104,7 +103,7 @@
           <div class="card__details">
               <h2>Lorem</h2>
               <p class='small__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestias dolorum culpa quae rem repellat officiis quibusdam ullam possimus dolor.</p>
-              <a href="#" target="_blank" class="btn btn--whitee ">Website</a>
+              <a href="project_two.html" target="_blank" class="btn btn--whitee ">Website</a>
             </div>
         </div>
       </div>
@@ -142,7 +141,7 @@
           <div class="card__details">
             <h2>Lorem</h2>
             <p class='small__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestias dolorum culpa quae rem repellat officiis quibusdam ullam possimus dolor.</p>
-            <a href="#" target="_blank" class="btn btn--whitee ">Website</a>
+            <a href="project_three.html" target="_blank" class="btn btn--whitee ">Website</a>
           </div>
         </div>
       </div>
@@ -153,30 +152,56 @@
 
 <!--/ services -->
 
-  
+
 <!-- Gallery -->
-
-<div class="gallery_header">
-  <h3>
-    Titan Construction Projects
-  </h3>  
+<div class="container gallery-container">
+  <span class="glyphicon glyphicon-search"></span>
+  <h2>Titan Construction Projects</h2>
+  <div class="tz-gallery">
+      <div class="row">
+          <div class="col-sm-12 col-md-4">
+              <a class="lightbox" href="img/architecture3.jpg">
+                  <img src="img/architecture3.jpg" alt="Bridge">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="img/architecture4.jpg">
+                  <img src="img/architecture4.jpg" alt="Park">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="img/architecture.jpg">
+                  <img src="img/architecture.jpg" alt="Tunnel">
+              </a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+              <a class="lightbox" href="img/architecture2.jpg">
+                  <img src="/img/architecture2.jpg" alt="Traffic">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="img/architecture3.jpg">
+                  <img src="img/architecture3.jpg" alt="Coast">
+              </a>
+          </div> 
+          <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="img/architecture4.jpg">
+                  <img src="img/architecture4.jpg" alt="Rails">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a class="lightbox" href="img/architecture4.jpg">
+                  <img src="img/architecture4.jpg" alt="Rails">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a class="lightbox" href="img/architecture3.jpg">
+                  <img src="img/architecture3.jpg" alt="Rails">
+              </a>
+          </div>
+      </div>
+  </div>
 </div>
-
-<div class="gallery_wrapper">
-  <a data-fancybox="gallery" data-src="#hidden-content" href="javascript:;" class="box one" data-fancybox="gallery"></a>
-  <a href="#" class="box two" data-fancybox="gallery"></a>
-  <a href="#" class="box three" data-fancybox="gallery"></a>
-  <a href="#" class="box four" data-fancybox="gallery"></a>
-  <a href="#" class="box five" data-fancybox="gallery"></a>
-  <a href="#" class="box six" data-fancybox="gallery"></a>
-</div>
-
-
-<div style="display: none;" id="hidden-content">
-	<h2>Hello</h2>
-	<p>You are awesome.</p>
-</div>
-
 
 <!-- /Gallery -->
   <!-- Footer -->
@@ -215,11 +240,14 @@
     </footer>
   <!--/ Loader -->
   <!-- Scroll-to-Top -->
+
   <a href="#header" class="scrollup"><i class="far fa-arrow-alt-circle-up"></i></a>
-  <!-- Day and night -->
-  <div class="daynight"></div>
   <script src="js/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+    baguetteBox.run('.tz-gallery');
+  </script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>  
 
 </body>

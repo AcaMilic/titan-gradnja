@@ -55,6 +55,10 @@
     background-color: $color-primary-dark;
     color: $color-white;
 
+    &:hover{
+      color: $color-white;
+
+    }
     &::after {
       background-color: $color-primary-dark;
     }
