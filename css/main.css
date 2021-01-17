@@ -3002,6 +3002,7 @@ nav .menu-icon {
 }
 
 .gallery-container {
+  max-width: 1450px;
   margin-bottom: 10rem;
   margin-top: 10rem;
 }
@@ -3038,6 +3039,19 @@ nav .menu-icon {
   opacity: 0;
   background-color: rgba(0, 34, 62, 0.7);
   content: '';
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.tekst-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  margin: 2rem;
+  text-align: center;
+  color: #F4F4ED;
+  font-size: 1.5rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
