@@ -43,7 +43,7 @@
 
   &__text-box {
     position: absolute;
-    top: 45%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -140,7 +140,7 @@
 
   &__text-box {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -215,6 +215,94 @@
 }
 
 
+.header-exclusive {
+  height: 80vh;
+  background-image: linear-gradient(to right bottom,
+    rgba($color-primary-dark, 0.9),
+    rgba($color-black, 0.17)),
+    url(../../img/sunset.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+  .heading-primary{
+    margin-top: 15rem;
+  }
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0,
+      100% 0,
+      100% 0,
+      100% 80%,
+      50% 90%,
+      0 80%,
+      0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  only screen and (min-width: 175em) {
+    background-image: linear-gradient(to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8));
+  }
+
+
+  .header__portfolio {
+    @include absCenter-top;
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    text-align: center;
+
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    .btn--whitee{
+      margin-right: 2rem;
+    }
+
+
+    @include respond(phone) {
+      top: 45%;
+      width: 100%;
+    }
+  }
+
+  .fa-chevron-down {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    display: inline-block;
+    width: 12px;
+    margin-left: -12px;
+    font-size: 36px;
+    line-height: 14px;
+    z-index: 999;
+    -webkit-animation: bounce 4000ms infinite;
+    animation: bounce 3000ms infinite;
+    transition: 1s ease-in-out;
+
+    @include respond(lumia) {
+      font-size: 2rem;
+    }
+
+
+    &:hover {
+      color: $color-primary-light;
+    }
+  }
+}
 .header_istorijat {
   height: 120vh;
   background-image: linear-gradient(to right bottom,
@@ -289,7 +377,7 @@
 }
 
 .header_partneri {
-  height: 120vh;
+  height: 80vh;
   background-image: linear-gradient(to right bottom,
     rgba($color-primary-dark, 0.5),
     rgba($color-black, 0.9)),

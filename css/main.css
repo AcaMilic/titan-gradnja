@@ -1173,7 +1173,7 @@ nav .logo {
   width: 25%;
   position: absolute;
   text-align: left;
-  margin: 5rem auto;
+  margin: 4rem auto;
 }
 
 @media all and (max-width: 2560px) {
@@ -1188,6 +1188,7 @@ nav .logo img {
 
 @media only screen and (max-width: 56.25em) {
   nav .logo {
+    width: 50%;
     top: -1rem;
     margin-left: 2rem;
   }
@@ -1271,7 +1272,7 @@ nav .menu-icon {
 
 .header__text-box {
   position: absolute;
-  top: 45%;
+  top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1332,7 +1333,7 @@ nav .menu-icon {
 
 .header-gradnja__text-box {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1403,6 +1404,96 @@ nav .menu-icon {
           transform: scale(0.8);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.header-exclusive {
+  height: 80vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 34, 62, 0.9)), to(rgba(0, 0, 0, 0.17))), url(../../img/sunset.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 34, 62, 0.9), rgba(0, 0, 0, 0.17)), url(../../img/sunset.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-exclusive .heading-primary {
+  margin-top: 15rem;
+}
+
+@supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
+  .header-exclusive {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 90%, 0 80%, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 175em) {
+  .header-exclusive {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 142, 195, 0.8)), to(rgba(0, 34, 62, 0.8)));
+    background-image: linear-gradient(to right bottom, rgba(0, 142, 195, 0.8), rgba(0, 34, 62, 0.8));
+  }
+}
+
+.header-exclusive .header__portfolio {
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+  text-align: center;
+}
+
+.header-exclusive__text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-exclusive__text-box .btn--whitee {
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header-exclusive__text-box {
+    top: 45%;
+    width: 100%;
+  }
+}
+
+.header-exclusive .fa-chevron-down {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #F4F4ED;
+  display: inline-block;
+  width: 12px;
+  margin-left: -12px;
+  font-size: 36px;
+  line-height: 14px;
+  z-index: 999;
+  -webkit-animation: bounce 4000ms infinite;
+  animation: bounce 3000ms infinite;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+@media only screen and (max-height: 37.5em) {
+  .header-exclusive .fa-chevron-down {
+    font-size: 2rem;
+  }
+}
+
+.header-exclusive .fa-chevron-down:hover {
+  color: #008ec3;
 }
 
 .header_istorijat {
@@ -1479,7 +1570,7 @@ nav .menu-icon {
 }
 
 .header_partneri {
-  height: 120vh;
+  height: 80vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 34, 62, 0.5)), to(rgba(0, 0, 0, 0.9))), url(../../img/adventure.jpg);
   background-image: linear-gradient(to right bottom, rgba(0, 34, 62, 0.5), rgba(0, 0, 0, 0.9)), url(../../img/adventure.jpg);
   background-size: cover;
@@ -1849,6 +1940,13 @@ nav .menu-icon {
   width: 70%;
 }
 
+@media only screen and (max-width: 75em) {
+  .card__heading {
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+
 .card__heading-span {
   padding: 1rem 1.5rem;
   -webkit-box-decoration-break: clone;
@@ -2064,16 +2162,9 @@ nav .menu-icon {
   background-size: 100%;
   border-radius: 3px;
   background-size: cover;
-  margin-left: 15rem;
+  width: 900px;
   -webkit-box-shadow: 1.2rem 1.5rem 4rem rgba(0, 34, 62, 0.4);
           box-shadow: 1.2rem 1.5rem 4rem rgba(0, 34, 62, 0.4);
-}
-
-@media only screen and (max-width: 37.5em) {
-  .contact {
-    margin-left: 0;
-    margin-top: 2rem;
-  }
 }
 
 @media only screen and (max-width: 75em) {
@@ -2083,7 +2174,7 @@ nav .menu-icon {
 }
 
 .contact__form {
-  padding: 4rem;
+  padding: 8rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -2103,10 +2194,9 @@ nav .menu-icon {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(247, 247, 247, 0.1)), to(rgba(51, 51, 51, 0.4)));
   background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.1), rgba(51, 51, 51, 0.4));
   background-size: cover;
-  -webkit-transform: skewY(-9deg);
-          transform: skewY(-9deg);
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
   position: relative;
-  margin-top: 20rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -2123,8 +2213,8 @@ nav .menu-icon {
 }
 
 .section-form > * {
-  -webkit-transform: skewY(9deg);
-          transform: skewY(9deg);
+  -webkit-transform: skewY(3deg);
+          transform: skewY(3deg);
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -2137,9 +2227,9 @@ nav .menu-icon {
   position: absolute;
   background-size: cover;
   background-position: center;
-  top: 14%;
+  top: 100px;
   left: 0;
-  width: 45%;
+  width: 35%;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -2151,8 +2241,8 @@ nav .menu-icon {
 @media only screen and (max-width: 37.5em) {
   .section-form .contact-wrap {
     position: unset;
-    width: 69%;
-    padding: 0;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -2178,8 +2268,8 @@ nav .menu-icon {
   padding: 10rem 0;
   background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 34, 62, 0.9))), url(../img/backgroundsecond.jpg);
   background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.9), rgba(0, 34, 62, 0.9)), url(../img/backgroundsecond.jpg);
-  -webkit-transform: skewY(-9deg);
-          transform: skewY(-9deg);
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -2188,8 +2278,8 @@ nav .menu-icon {
 }
 
 .navigation-footer > * {
-  -webkit-transform: skewY(9deg);
-          transform: skewY(9deg);
+  -webkit-transform: skewY(3deg);
+          transform: skewY(3deg);
 }
 
 .navigation-footer ul {
@@ -2925,8 +3015,8 @@ nav .menu-icon {
 .titangradnja-banner {
   margin: 0 auto;
   max-width: 114rem;
-  padding-top: 550px;
-  padding-bottom: 120px;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
 }
 
 .titangradnja-banner .portfolio_image_wrap {
@@ -2963,44 +3053,6 @@ nav .menu-icon {
   margin-top: 1.7rem;
 }
 
-.titangradnja-paralax {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 34, 62, 0.7)), to(rgba(0, 34, 62, 0.7))), url(../../img/machinery.jpg) center/cover fixed no-repeat;
-  background: linear-gradient(rgba(0, 34, 62, 0.7), rgba(0, 34, 62, 0.7)), url(../../img/machinery.jpg) center/cover fixed no-repeat;
-  height: 400px;
-}
-
-.titangradnja-paralax .paralax-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.titangradnja-paralax .paralax-wrap .paralax-heading {
-  text-align: center;
-  font-size: 5.2rem;
-  font-weight: bold;
-  text-shadow: 0 0 5px #1d1d1d;
-  color: white;
-}
-
-.titangradnja-paralax .paralax-wrap .paralax-btn {
-  text-align: center;
-  padding: 1rem 3.8rem;
-  margin-top: 3rem;
-  font-size: 2.6rem;
-}
-
 .containerko {
   max-width: 1380px;
   margin-left: auto;
@@ -3028,9 +3080,68 @@ nav .menu-icon {
   }
 }
 
+.titangradnja-paralax {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 34, 62, 0.7)), to(rgba(0, 34, 62, 0.7))), url(../../img/machinery.jpg) center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 34, 62, 0.7), rgba(0, 34, 62, 0.7)), url(../../img/machinery.jpg) center/cover fixed no-repeat;
+  height: 400px;
+}
+
+.titangradnja-paralax .paralax-wrap {
+  height: 100%;
+}
+
+.titangradnja-paralax .paralax-wrap .paralax-heading {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #F4F4ED;
+  padding-top: 10rem;
+}
+
+@media only screen and (min-width: 112.5em) {
+  .titangradnja-paralax .paralax-wrap .paralax-heading {
+    padding-top: 9rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .titangradnja-paralax .paralax-wrap .paralax-heading {
+    padding-top: 14rem;
+  }
+}
+
+.titangradnja-paralax .paralax-wrap .paralax-btn {
+  text-align: center;
+  padding: 1rem 3.8rem;
+  font-size: 2.6rem;
+}
+
+.titangradnja-paralax .paralax-wrap .button-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.titangradnja-paralax .paralax-wrap .button-center .button-projects {
+  margin-top: 6rem;
+  margin-right: 2rem;
+}
+
 .section-gallery {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-gallery {
+    padding: 0;
+  }
 }
 
 .section-gallery header {
@@ -3355,7 +3466,7 @@ nav .menu-icon {
 }
 
 .partneri .our-team {
-  padding: 30px 0 70px;
+  padding: 30px 0 90px;
   margin-bottom: 30px;
   border-radius: 5px;
   background-color: #00223e;

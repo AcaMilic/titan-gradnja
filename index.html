@@ -12,15 +12,35 @@
   <!-- <link rel="stylesheet" href="css/sal/sal.css"> -->
   <link rel="stylesheet" href="css/main.css" />
   <link rel="shortcut icon" type="image/png" href="img/titan-concept-test-5.png" />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
 
   <title>Titan Gradnja</title>
+  <script>
+  // Process translation
+      $(function() {
+        $('.translate').click(function() {
+          var lang = $(this).attr('id');
+  
+          $('.lang').each(function(index, item) {
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+          });
+        });
+      });
+    </script>
+    <style>
+      #map {
+        width: 100%;
+        height: 65vh;
+      }
+    </style>
 </head>
 <body>
   <!-- Header -->
   <header class="header-gradnja" id="header">
     <div class="header__portfolio">
     </div>
-    <nav class="about_nav">
+    <nav>
       <div class="menu-icon">
         <i class="fa fa-bars fa-2x"></i>
       </div>
@@ -30,30 +50,59 @@
             <img src="img/titan-c-logo-white.png" alt="logo">
           </div>
           <li><a href="index.html" class="">Početna</a></li>
-          <li><a href="about.html" class="">O nama</a></li>
-          <li><a href="istorijat.html" class="">Istorijat</a></li>
-          <li><a href="novi_projekti.html"><img src="img/serbia.png" alt="">Novi projekti</a></li>
-          <li><a href="partneri.html"><img src="img/united-kingdom.png" alt="">Partneri</a></li>
+          <li><a href="about.html" class="">O Nama</a></li>
+          <li class="services">
+            <a href="#" class="services-hover">Projekti</a>
+            <ul class="services-links">
+              <li><a href="project_two.html">Jajinci</a></li>
+              <li><a href="project_one.html">Mirijevo</a></li>
+              <li><a href="project_three.html">Novogradnja</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact" class="">Kontakt</a></li>
+          <li><a href="#"><img src="img/serbia.png" alt=""></a></li>
+          <li><a href="#"><img src="img/united-kingdom.png" alt=""></a></li>
         </ul>
       </div>
     </nav>
     <div class="header__text-box">
        <h1 class="heading-primary">
-        <span class="heading-primary--sub">Titan Gradnja</span>
+        <span class="heading-primary--main">Titan Gradnja</span>
       </h1> 
+      <a class="btn btn--whitee" href="new_projects.html">Novi Projekti</a>
+      <a class="btn btn--whitee" href="existing_projects.html">Stari Projekti</a>
+
     </div>    
+    <a href="#about_me_archives"><i class="fas fa-chevron-down hide_on_scroll"></i></a>
+
   </header>
   <!-- /HEader -->
-  <!-- TITAN CARE -->
-  <section class="titangradnja-banner" id="about_us">
 
-    <h1 class="care_title">Titan Gradnja Title</h1>
-    <p class="care_subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis iste eveniet provident nam consectetur distinctio laborum atque aliquam quas, alias, animi vitae adipisci architecto sapiente ab vel! Id earum totam laudantium. Velit quae, ullam voluptas ad culpa repellendus eligendi reprehenderit animi ea voluptatem quis consectetur autem aspernatur magnam exercitationem dolorem.</p>
+  <!-- TITAN CARE -->
+  <!-- About me -->
+  <section id="about_me">
+    <div class="roww u-margin-top-minus-small">
+      <div class="col-1-of-2">
+        <div class="content">
+          <h2 class="heading-secondary-medium u-margin-bottom-small-three">Titan Gradnja</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor libero voluptate tempore quisquam enim quidem 
+            soluta similique doloremque iste. Earum delectus placeat maxime laudantium ea blanditiis odio voluptatum dolor numquam, quas voluptas non fugiat
+             perspiciatis repudiandae iure nulla qui. Id eum quis cupiditate commodi culpa est, aliquam quaerat saepe in.</p>
+        </div>
+      </div>
+      <div class="col-1-of-2 logo_titan">
+        <img src="/img/archive.jpg" alt="">
+        </div>
+      </div>
+    </div>
   </section>
   <section class="titangradnja-paralax">
     <div class="paralax-wrap">
       <h1 class="paralax-heading">Interested to learn more?</h1>
-      <button class="btn btn--white paralax-btn">Visit website</button>
+      <div class="button-center">
+        <a class="btn btn--white button-projects" href="istorijat.html">ISTORIJAT</a>
+        <a class="btn btn--white button-projects" href="partneri.html">PARTNERI</a>
+      </div>
     </div>
   </section>
   <!-- END TITAN CARE -->
@@ -96,7 +145,7 @@
             &nbsp;
           </div>
           <h4 class="card__heading">
-            <span class="card__heading-span card__heading-span--1">Novogradnja Jajnici</span>
+            <span class="card__heading-span card__heading-span--1">Novogradnja Jajinci</span>
           </h4>
           <div class="card__details">
               <h2>Lorem</h2>
@@ -173,110 +222,69 @@
 	</div>
 </section>
 
-<!-- <div class="container gallery-container">
-  <span class="glyphicon glyphicon-search"></span>
-  <h2>Titan Construction Projects</h2>
-  <div class="tz-gallery">
-      <div class="row">
-          <div class="col-sm-12 col-md-4">
-              <a class="lightbox" href="img/architecture3.jpg">
-                  <img src="img/architecture3.jpg" alt="Bridge">
-              </a>
-              <div class="tekst-img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quam.</p>
-              </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-              <a class="lightbox" href="img/architecture4.jpg">
-                  <img src="img/architecture4.jpg" alt="Park">
-              </a>
-              <div class="tekst-img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quam.</p>
-              </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-              <a class="lightbox" href="img/architecture.jpg">
-                  <img src="img/architecture.jpg" alt="Tunnel">
-              </a>
-              <div class="tekst-img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quam.</p>
-              </div>
-          </div>
-          <div class="col-sm-12 col-md-4">
-              <a class="lightbox" href="img/architecture2.jpg">
-                  <img src="/img/architecture2.jpg" alt="Traffic">
-              </a>
-              <div class="tekst-img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quam.</p>
-              </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-              <a class="lightbox" href="img/architecture3.jpg">
-                  <img src="img/architecture3.jpg" alt="Coast">
-              </a>
-              <div class="tekst-img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quam.</p>
-              </div>
-          </div> 
-          <div class="col-sm-6 col-md-4">
-              <a class="lightbox" href="img/architecture4.jpg">
-                  <img src="img/architecture4.jpg" alt="Rails">
-              </a>
-              <div class="tekst-img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quam.</p>
-              </div>
-          </div>
-          <div class="col-sm-6 col-md-6">
-              <a class="lightbox" href="img/architecture4.jpg">
-                  <img src="img/architecture4.jpg" alt="Rails">
-              </a>
-              <div class="tekst-img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quam.</p>
-              </div>
-          </div>
-          <div class="col-sm-6 col-md-6">
-              <a class="lightbox" href="img/architecture3.jpg">
-                  <img src="img/architecture3.jpg" alt="Rails">
-              </a>
-              <div class="tekst-img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quam.</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</div> -->
-
 <!-- /Gallery -->
+
+   <!-- contact -->
+
+   <section class="section-form" id="contact">
+    <div id='map'></div>
+    <div class="row contact-wrap">
+      <div class="contact">
+        <div class="contact__form">
+          <form method="POST" action="form/sendemail.php" class="form">
+            <div class="u-margin-bottom-medium">
+              <h2 class="heading-secondary-medium">
+                Kontaktirajte Nas
+              </h2>
+            </div>
+
+            <div class="form__group">
+              <input type="text" class="form__input" placeholder="Name" id="name" name="name" required>
+              <label for="name" class="form__label">Ime</label>
+            </div>
+
+            <div class="form__group">
+              <input type="email" class="form__input" placeholder="Email address" id="email" name="email" required>
+              <label for="email" class="form__label">Email adresa</label>
+            </div>
+            <div class="form__group">
+              <textarea name="message" id="message" class="form-control" placeholder="Enter your message" name="message"></textarea>
+            </div>
+
+            <div class="form__group">
+              <br>
+              <button class="btn btn--white" type="submit" id="sendForm" value="Submit" name="submit">Pošaljite Poruku</button>
+              <p id="success" class="greenSuccess">Poruka Poslata!</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--/ contact -->
   <!-- Footer -->
   <footer class="navigation-footer">
     <div class="roww navigation-padding">
-      <div class="col-1-of-4">
+      <div class="col-1-of-3">
         <ul>
           <li><a href="#header">Home</a></li>
-          <li><a href="#about_me">About</a></li>
-          <li><a href="#portfolio">Services</a></li>
+          <li><a href="#about_me">O Nama</a></li>
+          <li><a href="#portfolio">Projekti</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div class="col-1-of-4">
+      <div class="col-1-of-3">
         <div class="phone-and-mail">
           <ul>
             <li><i class="fas fa-phone phone-and-mail__icons"></i><span> 012 345 678</span>
             </li>
-            <li><i class="far fa-envelope phone-and-mail__icons"></i><span> titanconcept@gmail.com</span></li>
+            <li><i class="far fa-envelope phone-and-mail__icons"></i><span> titangradnja@gmail.com</span></li>
             <li><i class="fas fa-map-marker-alt phone-and-mail__icons"></i><span> Address 12/34</span></li>
           </ul>
         </div>
       </div>
-      <div class="col-1-of-4">
-        <div class="phone-and-mail">
-          <ul>
-            <li><a href="#">Terms and Conditions</a></li>
-            <li><a href="#about_me">Privacy Policy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-1-of-4 copy">
+      <div class="col-1-of-3 copy">
         <h4>Copyright &copy; Titan Concept 2020, All Rights Reserved. </h4>
       </div>
     </div>
@@ -289,6 +297,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
   <script>
     baguetteBox.run('.tz-gallery');
+  </script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidGl0YW5jb25jZXB0IiwiYSI6ImNramJjNzNhazFwZGcycXJ1YmE2YjlqNW8ifQ.s4AwywZijMnKUFGDLM3U0w';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/titanconcept/ckjbcqywna01x19p373n0jeug'
+      });
   </script>
   <script src="js/gallery.js"></script>
   <script src="js/bootstrap.min.js"></script>

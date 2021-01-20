@@ -19,7 +19,7 @@
         rgba($color-black, 0.9),
         rgba($color-primary-dark, 0.9)),
         url(../img/backgroundsecond.jpg);
-    transform: skewY(-9deg);
+    transform: skewY(-3deg);
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -28,7 +28,7 @@
     
 
     &>* {
-        transform: skewY(9deg);
+        transform: skewY(3deg);
     }
 
 

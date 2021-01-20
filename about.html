@@ -6,16 +6,16 @@
   <meta author="Titan Concept team" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <!-- Bootstrap core CSS -->
-  <!-- <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   <!-- <link rel="stylesheet" href="css/sal/sal.css"> -->
   <link rel="stylesheet" href="css/main.css" />
   <link rel="shortcut icon" type="image/png" href="img/titan-concept-test-5.png" />
-  <title>Istorijat</title>
+  <title>Titan Archives</title>
 </head>
 <body>
   <!-- Header -->
-  <header class="header_istorijat" id="header">
+  <header class="header-exclusive" id="header">
     <div class="header__portfolio">
     </div>
     <nav class="about_nav">
@@ -25,64 +25,83 @@
       <div class="menu">
         <ul>
           <div class="logo">
-            <img src="img/titan-c-logo-white.png" alt="logo">
+            <img src="img/titan_archive_logo_cmyk-black.png" alt="logo">
           </div>
-        <li><a href="index.html" class="">Početna</a></li>
-          <li><a href="about.html" class="">O nama</a></li>
-          <li><a href="istorijat.html" class="">Istorijat</a></li>
-          <li><a href="novi_projekti.html"><img src="img/serbia.png" alt="">Novi projekti</a></li>
-          <li><a href="partneri.html"><img src="img/united-kingdom.png" alt="">Partneri</a></li>
+          <li><a href="index.html" class="">Početna</a></li>
+          <li><a href="#about" class="">O Nama</a></li>
+          <li class="services">
+            <a href="#" class="services-hover">Projekti</a>
+            <ul class="services-links">
+              <li><a href="new_projects.html">Novi Projekti</a></li>
+              <li><a href="existing_projects.html">Stari Projekti</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#contact" class="">Contact</a></li>
+          <li><a href="#"><img src="img/serbia.png" alt=""></a></li>
+          <li><a href="#"><img src="img/united-kingdom.png" alt=""></a></li>
         </ul>
       </div>
     </nav>
-    <div class="text-box__istorijat">
+    <div class="header__text-box">
        <h1 class="heading-primary">
-        <span class="heading-primary--sub">Istorijat</span>
-      </h1>
-    </div>  
-    <div class="header-istorijat">
-        <p class="text-istorijat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quas error aliquam nostrum voluptatum corrupti aliquid? Suscipit sit veritatis amet quidem possimus illo distinctio, 
-            laudantium exercitationem ratione sapiente id iure.</p> 
-    </div>   
+        <span class="heading-primary--main">Titan Gradnja</span>
+        <span class="heading-primary--sub">About Us</span>
+      </h1> 
+    </div>    
   </header>
   <!-- /HEader -->
+ <!-- About me 02 -->
+
+ <section class="page-section clearfix about_us" id="about">
+  <div class="container">
+    <div class="intro">
+      <img class="intro-img img-fluid mb-3" src="img/architecture3.jpg" alt="">
+      <div class="intro-text bg-faded p-5">
+        <div class="content">
+          <h2 class="section-heading mb-4">
+            <span class="heading-secondary-medium u-margin-bottom-small-three"><b>O nama</b></span>
+          </h2>
+          <p>
+            Kompanija TITAN CONCEPT osnovnana je 2020. godine u Beogradu. Praćanjem
+            tržišta i stalnim uvođenjem novina u poslovanja širom sveta, nastao je jedinstven i nov
+            koncept, sa idejom da se usluge koje pružamo nađu na jednom mestu. Pri Titan
+            Conceptu, razvijeni su- Titan Care, Titan Gradnja i Titran Archives.
+          </p>
 
 
-
+        </div>
+        <div>
+          <a href="index.html#contact" class="btn btn--white">Kontaktirajte Nas</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   <!-- Footer -->
-  <!-- <footer class="navigation-footer">
-    <div class="row navigation-padding">
-      <div class="col-1-of-4">
+  <footer class="navigation-footer">
+    <div class="roww navigation-padding">
+      <div class="col-1-of-3">
         <ul>
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about_me">About</a></li>
-          <li><a href="#portfolio">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="index.html#about_me_archives">O Nama</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </div>
-      <div class="col-1-of-4">
+      <div class="col-1-of-3">
         <div class="phone-and-mail">
           <ul>
             <li><i class="fas fa-phone phone-and-mail__icons"></i><span> 012 345 678</span>
             </li>
-            <li><i class="far fa-envelope phone-and-mail__icons"></i><span> titanconcept@gmail.com</span></li>
+            <li><i class="far fa-envelope phone-and-mail__icons"></i><span> titanarchives@gmail.com</span></li>
             <li><i class="fas fa-map-marker-alt phone-and-mail__icons"></i><span> Address 12/34</span></li>
           </ul>
         </div>
       </div>
-      <div class="col-1-of-4">
-        <div class="phone-and-mail">
-          <ul>
-            <li><a href="#">Terms and Conditions</a></li>
-            <li><a href="#about_me">Privacy Policy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-1-of-4 copy">
+      <div class="col-1-of-3 copy">
         <h4>Copyright &copy; Titan Concept 2020, All rights reserved. </h4>
       </div>
     </div>
-    </footer> -->
+    </footer>
   <!--/ Loader -->
   <!-- Scroll-to-Top -->
   <a href="#header" class="scrollup"><i class="far fa-arrow-alt-circle-up"></i></a>
