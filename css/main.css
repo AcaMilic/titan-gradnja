@@ -1631,8 +1631,8 @@ nav .menu-icon {
 }
 
 #about_me {
-  padding-top: 40rem;
-  padding-bottom: 20rem;
+  padding-top: 30rem;
+  padding-bottom: 10rem;
   margin-top: -24rem;
   background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(205, 207, 203, 0.7)), to(rgba(244, 244, 237, 0.8)));
   background-image: linear-gradient(to bottom left, rgba(205, 207, 203, 0.7), rgba(244, 244, 237, 0.8));
