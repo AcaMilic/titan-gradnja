@@ -36,8 +36,14 @@
 
   }
   .logo_titan{
+    margin-top: 13rem;
+    @include respond(tab-port) {
+      margin-top: 0;
+    } 
     img{
-      max-width: 100%;
+      width: 100%;
+
+
       // margin-left: 15rem;
 
       @include respond(tab-land) {

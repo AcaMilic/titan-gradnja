@@ -1661,8 +1661,18 @@ nav .menu-icon {
   }
 }
 
+#about_me .logo_titan {
+  margin-top: 13rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  #about_me .logo_titan {
+    margin-top: 0;
+  }
+}
+
 #about_me .logo_titan img {
-  max-width: 100%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 75em) {
@@ -1871,7 +1881,7 @@ nav .menu-icon {
 }
 
 .section-portfolio .heading-secondary {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
   margin-top: 6rem;
 }
 
