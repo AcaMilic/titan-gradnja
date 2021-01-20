@@ -7,7 +7,7 @@
 }
 
 .card {
-
+    border: none;
     // FUNCTIONALITY
     perspective: 150rem;
     -moz-perspective: 150rem;
@@ -75,7 +75,7 @@
         position: absolute;
         top: 12rem;
         right: 2rem;
-        width: 75%;
+        width: 70%;
 
     }
 

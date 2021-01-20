@@ -43,10 +43,10 @@
       </h1>
     </div>  
   </header>
-  <div class="container-fluid partneri">
+  <div class="container-fluid partneri" id="partneri">
     <div class="row">
       <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-        <div class="our-team">
+        <div class="our-team"  data-toggle="modal" data-target="#modalone">
           <div class="picture">
             <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
           </div>
@@ -55,12 +55,38 @@
             <h4 class="title">Web Developer</h4>
           </div>
           <div class="social">
-            <a href="#"  data-target='#login' data-toggle='modal' class="btn btn--white">More</a>
+            <a href="#"  data-target='#modalone' data-toggle='modal' class="btn btn--white">More</a>
+            <!-- Modal -->
+            <div class="modal fade" id="modalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="iks">&times;</span>
+                    </button>
+                    </br>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 modalpicture">
+                        <img src="https://picsum.photos/130/130?image=1027" alt="" width=100%/>
+                      </div>
+                      <div class="col-sm-6 align-self-center textinmodal"> 
+                        <h5 class="intro-title"> Michelle Miller </h5>
+                        <h3> Web Developer </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias deleniti vitae minus architecto amet veniam dolorem rerum quo id esse?</p>
+                      </div>          
+                    </div>  
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-        <div class="our-team">
+        <div class="our-team" data-toggle="modal" data-target="#modaltwo">
           <div class="picture">
             <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
           </div>
@@ -69,9 +95,9 @@
             <h4 class="title">Web Developer</h4>
           </div>
           <div class="social">
-            <a href="#" target="_blank" data-toggle="modal" data-target="#modalone" class="btn btn--white">More</a>
+            <a href="#" data-toggle="modal" data-target="#modaltwo" class="btn btn--white">More</a>
             <!-- Modal -->
-            <div class="modal fade" id="modalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="modaltwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
 
@@ -100,7 +126,7 @@
         </div>
       </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-        <div class="our-team">
+        <div class="our-team" data-toggle="modal" data-target="#modalthree">
           <div class="picture">
             <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
           </div>
@@ -109,12 +135,38 @@
             <h4 class="title">Web Developer</h4>
           </div>
           <div class="social">
-            <a href="#" target="_blank" class="btn btn--white">More</a>
+            <a href="#" data-toggle="modal" data-target="#modalthree" class="btn btn--white">More</a>
+            <!-- Modal -->
+            <div class="modal fade" id="modalthree" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="iks">&times;</span>
+                    </button>
+                    </br>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 modalpicture">
+                        <img src="https://picsum.photos/130/130?image=856" alt="" width=100%/>
+                      </div>
+                      <div class="col-sm-6 align-self-center textinmodal"> 
+                        <h5 class="intro-title"> Justin Ramos </h5>
+                        <h3> Web Developer </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias deleniti vitae minus architecto amet veniam dolorem rerum quo id esse?</p>
+                      </div>          
+                    </div>  
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-        <div class="our-team">
+        <div class="our-team"  data-toggle="modal" data-target="#modalfour">
           <div class="picture">
             <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
           </div>
@@ -123,35 +175,113 @@
             <h4 class="title">Web Developer</h4>
           </div>
           <div class="social">
-            <a href="#" target="_blank" class="btn btn--white">More</a>
+            <a href="#" data-toggle="modal" data-target="#modalfour" class="btn btn--white">More</a>
+            <!-- Modal -->
+            <div class="modal fade" id="modalfour" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="iks">&times;</span>
+                    </button>
+                    </br>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 modalpicture">
+                        <img src="https://picsum.photos/130/130?image=836" alt="" width=100%/>
+                      </div>
+                      <div class="col-sm-6 align-self-center textinmodal"> 
+                        <h5 class="intro-title"> Mary Huntley </h5>
+                        <h3> Web Developer </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias deleniti vitae minus architecto amet veniam dolorem rerum quo id esse?</p>
+                      </div>          
+                    </div>  
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-        <div class="our-team">
+        <div class="our-team"  data-toggle="modal" data-target="#modalfive">
           <div class="picture">
-            <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
+            <img class="img-fluid" src="https://picsum.photos/130/130?image=846">
           </div>
           <div class="team-content">
             <h3 class="name">Mary Hozbad</h3>
             <h4 class="title">Web Developer</h4>
           </div>
           <div class="social">
-            <a href="#" target="_blank" class="btn btn--white">More</a>
+            <a href="#"  data-toggle="modal" data-target="#modalfive" class="btn btn--white">More</a>
+            <!-- Modal -->
+            <div class="modal fade" id="modalfive" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="iks">&times;</span>
+                    </button>
+                    </br>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 modalpicture">
+                        <img src="https://picsum.photos/130/130?image=846" alt="" width=100%/>
+                      </div>
+                      <div class="col-sm-6 align-self-center textinmodal"> 
+                        <h5 class="intro-title"> Mary Hozbad </h5>
+                        <h3> Web Developer </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias deleniti vitae minus architecto amet veniam dolorem rerum quo id esse?</p>
+                      </div>          
+                    </div>  
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-        <div class="our-team">
+        <div class="our-team" data-toggle="modal" data-target="#modalsix">
           <div class="picture">
-            <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
+            <img class="img-fluid" src="https://picsum.photos/130/130?image=886">
           </div>
           <div class="team-content">
             <h3 class="name">Mary Mehljud</h3>
             <h4 class="title">Web Developer</h4>
           </div>
           <div class="social">
-            <a href="#" target="_blank" class="btn btn--white">More</a>
+            <a href="#"  data-toggle="modal" data-target="#modalsix" class="btn btn--white">More</a>
+            <!-- Modal -->
+            <div class="modal fade" id="modalsix" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="iks">&times;</span>
+                    </button>
+                    </br>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 modalpicture">
+                        <img src="https://picsum.photos/130/130?image=886" alt="" width=100%/>
+                      </div>
+                      <div class="col-sm-6 align-self-center textinmodal"> 
+                        <h5 class="intro-title"> Mary Mehljud </h5>
+                        <h3> Web Developer </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias deleniti vitae minus architecto amet veniam dolorem rerum quo id esse?</p>
+                      </div>          
+                    </div>  
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
