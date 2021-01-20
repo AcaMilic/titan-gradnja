@@ -1272,7 +1272,7 @@ nav .menu-icon {
 
 .header__text-box {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
