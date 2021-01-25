@@ -1,0 +1,165 @@
+body{
+  overflow-x: hidden;
+}
+.rtable {
+    /*!
+    // IE needs inline-block to position scrolling shadows otherwise use:
+    // display: block;
+    // max-width: min-content;
+    */
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    
+    overflow-x: auto;
+    
+    // optional - looks better for small cell values
+    white-space: wrap;
+  
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 2rem;
+  }
+  
+  
+  .rtable th {
+    font-size: 1.6rem;
+    text-align: left;
+    color: $color-white;
+    text-transform: uppercase;
+    background: $color-primary-dark;
+  }
+  
+  .rtable th,
+  .rtable td {
+    // color: $color-white;
+    
+    // background: $color-primary-dark;
+    border: 1px solid $color-grey-light-2;
+  }
+  
+  .rtable td {
+    font-size: 1.43rem;
+    color: $color-primary-dark;
+    transition: .5s ease-in-out;
+    &:hover{
+      background: $color-grey-light-2;
+    }
+  }
+  
+  .heading-secondary-project{
+      font-size: 2.4rem;
+      text-align: center;
+      color: $color-primary-dark;
+  }
+  .heading-secondary-medium-project{
+      font-size: 1.8rem;
+      text-align: center;
+      color: $color-primary-light;
+  }
+
+
+.dataTable-top{
+  display: none;
+}
+
+.dataTable-bottom{
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  padding: 0;
+}
+.dataTable-pagination{
+  .pager{
+    a{
+      font-size: 1.5rem;
+      color: $color-white;
+      background: $color-primary-dark;
+    }
+  }
+  li{
+    a{
+      color: $color-white;
+      background: $color-primary-dark;
+      font-size: 1.5rem;
+    }
+  }
+  
+}
+.dataTable-info{
+  display: none;
+}
+
+.carousel-inner,.carousel,.carousel-item,.container,.fill {
+  height: 100%;
+  width: 100%;
+  background-position:center;
+  background-size:cover;
+  margin: 0 auto;
+
+
+  @include respond(tab-middle) {
+    width: 470px;
+  }
+  @media (min-width: 992px) {
+    width: 400px;
+  }
+  
+  @include respond(phone) {
+    width: 350px;
+  }
+
+
+}
+.fill{
+  
+  img{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    width:100%;
+
+    @include respond(tab-middle) {
+      width: 350px;
+    }
+  }
+  .heading-secondary-medium-project{
+    margin-bottom: 1rem;
+  }
+}
+
+
+.carousel-indicators li{
+   border:3px solid $color-primary-dark; 
+  background: $color-primary-light;
+  bottom: -50px;
+  
+  @include respond(phone) {
+    display: inline;
+  }
+  
+}
+
+// .carousel-control-prev-icon{
+//   background-color: $color-primary-dark;
+//   width: 20px;
+//   height: 20px;
+//   border-radius: 50%;
+// }
+// .carousel-control-prev{
+//   opacity: 1;
+//   width: 5%;
+
+// }
+// .carousel-control-next{
+//   opacity: 1;
+//   width: 5%;
+// }
+// .carousel-control-next-icon{
+//   background-color: $color-primary-dark;
+//   width: 20px;
+//   height: 20px;
+//   border-radius: 50%;
+// }

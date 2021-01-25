@@ -1291,7 +1291,7 @@ nav .menu-icon {
 }
 
 .header-mirijevo {
-  height: 80vh;
+  height: 90vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 34, 62, 0.9)), to(rgba(0, 0, 0, 0.17))), url(../../img/Mirijevo_Model_1.jpg);
   background-image: linear-gradient(to right bottom, rgba(0, 34, 62, 0.9), rgba(0, 0, 0, 0.17)), url(../../img/Mirijevo_Model_1.jpg);
   background-size: cover;
@@ -1504,18 +1504,16 @@ nav .menu-icon {
 
 .blue {
   background-color: #00223e;
-  margin-top: -15rem;
-  height: 50vh;
+  margin-top: -35rem;
+  height: 60vh;
 }
 
 .img_box {
-  width: 90%;
+  width: 100%;
   position: relative;
 }
 
 .owl-carousel .owl-item.active.center {
-  -webkit-transform: scale(1.6);
-          transform: scale(1.6);
   z-index: 999;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -3725,6 +3723,149 @@ nav .menu-icon {
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 650px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.rtable {
+  /*!
+    // IE needs inline-block to position scrolling shadows otherwise use:
+    // display: block;
+    // max-width: min-content;
+    */
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: wrap;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 2rem;
+}
+
+.rtable th {
+  font-size: 1.6rem;
+  text-align: left;
+  color: #F4F4ED;
+  text-transform: uppercase;
+  background: #00223e;
+}
+
+.rtable th,
+.rtable td {
+  border: 1px solid #eee;
+}
+
+.rtable td {
+  font-size: 1.43rem;
+  color: #00223e;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.rtable td:hover {
+  background: #eee;
+}
+
+.heading-secondary-project {
+  font-size: 2.4rem;
+  text-align: center;
+  color: #00223e;
+}
+
+.heading-secondary-medium-project {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #008ec3;
+}
+
+.dataTable-top {
+  display: none;
+}
+
+.dataTable-bottom {
+  padding: 0;
+}
+
+.dataTable-pagination .pager a {
+  font-size: 1.5rem;
+  color: #F4F4ED;
+  background: #00223e;
+}
+
+.dataTable-pagination li a {
+  color: #F4F4ED;
+  background: #00223e;
+  font-size: 1.5rem;
+}
+
+.dataTable-info {
+  display: none;
+}
+
+.carousel-inner, .carousel, .carousel-item, .container, .fill {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 87.5em) {
+  .carousel-inner, .carousel, .carousel-item, .container, .fill {
+    width: 470px;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-inner, .carousel, .carousel-item, .container, .fill {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .carousel-inner, .carousel, .carousel-item, .container, .fill {
+    width: 350px;
+  }
+}
+
+.fill img {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 87.5em) {
+  .fill img {
+    width: 350px;
+  }
+}
+
+.fill .heading-secondary-medium-project {
+  margin-bottom: 1rem;
+}
+
+.carousel-indicators li {
+  border: 3px solid #00223e;
+  background: #008ec3;
+  bottom: -50px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .carousel-indicators li {
+    display: inline;
   }
 }
 /*# sourceMappingURL=main.css.map */
