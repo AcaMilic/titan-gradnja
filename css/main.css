@@ -3869,7 +3869,6 @@ body {
 
 .carousel-indicators li {
   border: 3px solid #00223e;
-  background: #008ec3;
   bottom: -50px;
 }
 
@@ -3877,5 +3876,9 @@ body {
   .carousel-indicators li {
     display: inline;
   }
+}
+
+.carousel-indicators .active {
+  border: 3px solid #008ec3;
 }
 /*# sourceMappingURL=main.css.map */
