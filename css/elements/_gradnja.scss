@@ -244,7 +244,7 @@
     }
     .row {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-gap: $gutter ;
         @media only screen and (max-width : 1075px) {
           grid-template-columns: 2fr 2fr;
