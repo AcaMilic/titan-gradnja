@@ -226,22 +226,7 @@
       padding: 0;
     }
 
-    header {
-      text-align: center;
-      margin-top: $gutter * 2;
-      margin-bottom: $gutter * 2;
-      h2 {
-        font-size: 3.5rem;
-        font-weight: 700;
-        display: inline-block;
-        background-image: -webkit-gradient(linear, left top, right top, from($color-primary-dark), to($color-primary-light));
-        background-image: linear-gradient(to right, $color-primary-dark, $color-primary-light);
-        -webkit-background-clip: text;
-        color: transparent;
-        letter-spacing: 0.2rem;
-
-      }
-    }
+    
     .row {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -255,8 +240,11 @@
           
         }
         img {
-            width: 100%;
-            
+          width: 100%;
+          height: 200px;
+          @media only screen and (max-width : 1075px) {
+           height: 400px;
+          }
             @extend .style-hover-img;
             cursor: pointer;
             @media only screen and (max-width : 900px) {
@@ -281,11 +269,11 @@
 // 
 .style-hover-img {
     outline: 2px solid transparent;
+    transition: all 1s ease-in-out;
 
-
-    transition: all 1s;
     &:hover {
-        outline: .5rem solid $color-primary-dark;
+        outline: .3rem solid $color-primary-dark;
+        opacity: .8;
 
 
     }
@@ -386,6 +374,10 @@
         color: #fff;
         font-size: 1.6rem;
         text-align: center;
+        @media only screen and (max-width : 900px) {
+
+          font-size: 1.2rem;
+        }
     }
     .gallery-counter {
         position: absolute;
@@ -393,7 +385,7 @@
         top: 0;
         left: 0;
         padding: 2px 10px;
-        background-color: rgba(rgba($color-primary-dark, 0.7), .5);
+        background-color: $black;
         color: #fff;
         text-align: center;
         font-size: 2rem;
