@@ -1377,7 +1377,7 @@ nav .menu-icon {
 }
 
 .header-jajinci .heading-primary--sub {
-  font-size: 6.5rem;
+  font-size: 3rem;
 }
 
 @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
