@@ -117,15 +117,25 @@ nav {
         // animation: moveInLeftLogo 2s ease-in-out;
         // animation-delay: 2s;
         // transition: color 0.4s ease-in-out;
+        img {
+            width: 40%;
+
+                    
+        @media all and (max-width: 768px) {
+	
+           width: 28%;
+        }
+        @media all and (max-width: 420px) {
+	
+           width: 45%;
+        }
+        }
 
         @media all and (max-width: 2560px) {
 	
             width: 21%;
         }
 
-        img {
-            width: 40%;
-        }
 
         @include respond(tab-port) {
             width: 50%;

@@ -21,6 +21,15 @@ body{
     margin-top: 2rem;
   }
   
+  .dataTable-table>tbody>tr>td{
+    @media all and (max-width: 420px) {
+	
+      padding: 2px 2px;
+   }
+  }
+  .dataTable-table>thead>tr>th{
+    padding: 3px 3px;
+  }
   
   .rtable th {
     font-size: 1.6rem;
@@ -28,6 +37,10 @@ body{
     color: $color-white;
     text-transform: uppercase;
     background: $color-primary-dark;
+    @media all and (max-width: 420px) {
+	
+      font-size: 1.4rem;
+   }
   }
   
   .rtable th,
@@ -42,6 +55,12 @@ body{
     font-size: 1.43rem;
     color: $color-primary-dark;
     transition: .5s ease-in-out;
+
+    @media all and (max-width: 420px) {
+	
+      font-size: 1.2rem;
+
+   }
     &:hover{
       background: $color-grey-light-2;
     }
@@ -108,6 +127,12 @@ body{
   @include respond(phone) {
     width: 350px;
   }
+  @media (max-width: 380px) {
+    width: 300px;
+  }
+  @media (max-width: 320px) {
+    width: 240px;
+  }
 
 
 }
@@ -125,6 +150,14 @@ body{
     @include respond(tab-middle) {
       width: 350px;
     }
+    @media all and (max-width: 420px) {
+	
+      width: 250px;
+   }
+    @media all and (max-width: 380px) {
+	
+      width: 200px;
+   }
   }
   .heading-secondary-medium-project{
     margin-bottom: 1rem;
@@ -144,7 +177,6 @@ body{
     border: 3px solid $color-primary-light;
   }
 }
-  
   
 
 
@@ -170,3 +202,99 @@ body{
 //   height: 20px;
 //   border-radius: 50%;
 // }
+
+
+// arrow
+#svg{
+  display: none;
+}
+
+@media (max-width: 599px) {
+  #svg {
+    display: block;
+    position: absolute;
+    bottom: 39%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    $animation_speed: 5s;
+    width: 50px;
+    transform: rotate(-270deg);
+    
+    #first-arrow {
+      animation: first-arrow infinite $animation_speed;
+      opacity: 0;
+    }
+    
+    #second-arrow {
+      animation: second-arrow infinite $animation_speed;
+    }
+  
+    #third-arrow {
+      animation: third-arrow infinite $animation_speed;
+    }
+  }
+  
+  @keyframes third-arrow {
+      0% {
+        transform: translateY(0);
+      }  
+      33% {
+        transform: translateY(20.4px);
+      }
+      34% {
+        opacity: 0;
+        transform: translateY(-40.8px);
+      }
+      67% {
+        opacity: 1;
+        transform: translateY(-20.4px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+      
+  }
+  
+  @keyframes second-arrow {
+      0% {
+        transform: translateY(0);
+      }
+      33% {
+        transform: translateY(20.4px);
+      }
+      66% {
+        opacity: 0;
+        transform: translateY(40.8px);
+      }
+      67% {
+        transform: translateY(-20.4px);
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+  }
+  
+  @keyframes first-arrow {
+      0% {
+        opacity: 0;
+        transform: translateY(0);
+      }
+      33% {
+        opacity: 1;
+        transform: translateY(20.4px);
+      }
+      66% {
+        transform: translateY(40.8px);
+      }
+      99% {
+        opacity: 0;
+        transform: translateY(61.2px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+  }
+}
+

@@ -62,24 +62,33 @@
       </h1> 
     </div>
   </header>
-
   <div class="container-fluid">
     <div class="owl-carousel owl-theme">
       <div class="img_box">
         <img src="img/Mirijevo_Model_03.jpg" alt="Mirijevo model 3">
+        <div class="svg-animation-arrow">
+          <svg id="svg" x="0px" y="0px" viewBox="0 0 62 74" style="enable-background:new 0 0 58.2 72;" xml:space="preserve">
+            <style type="text/css">
+              .st0{fill:none; stroke:#fff;stroke-miterlimit:20;}
+            </style>
+            <polyline id="first-arrow" class="st0" points="60.2,2 31.1,31.1 2,2 "/>
+            <polyline id="second-arrow" class="st0" points="60.2,22.4 31.1,51.5 2,22.4 "/>
+            <polyline id="third-arrow" class="st0" points="60.2,42.9 31.1,72 2,42.9 "/>
+          </svg>
+        </div>
       </div>
       <div class="img_box">
-        <img src="img/Mirijevo_Model_01.jpg" alt="Mirijevo model 1">
+        <img src="img/Mirijevo_Model_011.jpg" alt="Mirijevo model 1">
       </div>
       <div class="img_box">
-        <img src="img/Mirijevo_Model_02.jpg" alt="Mirijevo model 2">
+        <img src="img/Mirijevo_Model_022.jpg" alt="Mirijevo model 2">
       </div>
     </div>
   </div>
 
  <div class="containerko">
   <h2 class="heading-secondary text-center u-margin-top-big u-margin-bottom-small-three">STAMBENI OBJEKAT ulica Dragoslava Đorđevića Goše Mirijevo, Beograd</h2>
-	<div class="roww">
+	<div class="roww" id="zeropadding">
 		<div class="col-1-of-2">
 			<table class="table rtable">
 	<thead>
@@ -1934,6 +1943,7 @@
     </tr>
   </tbody>
 </table>
+
     </div>
     <div class="col-1-of-2">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -2066,8 +2076,9 @@
       
 
       perPage: 9,
+      
       sortable: false,
-
+      nextPrev: true,
 
     });
 

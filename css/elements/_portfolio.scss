@@ -8,25 +8,24 @@
 
 .card {
     border: none;
-    // FUNCTIONALITY
-    perspective: 150rem;
-    -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
 
     &__side {
         height: 54rem;
-        transition: all .8s ease;
+        transition: all .3s ease-in-out;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
         border-radius: 3px;
-        overflow: hidden;
-        // box-shadow: 0 1.5rem 1rem rgba($color-black, .15);
 
+        box-shadow: 0 1.5rem 1rem rgba($color-primary-dark, .15);
+
+        &:hover{
+        box-shadow: 0 .5rem .2rem rgba($color-primary-dark, .15);
+
+        }
 
         &--front {
             background-color: $color-white;
@@ -39,7 +38,6 @@
     &__picture {
         background-size: cover;
         height: 23rem;
-        background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
         clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
         border-top-left-radius: 3px;
@@ -47,12 +45,12 @@
 
         &--1 {
             background-image:
-                url(../../img/architecture.jpg);
+                url(../../img/Jajinci.jpg);
         }
 
         &--2 {
             background-image:
-                url(../../img/architecture2.jpg);
+                url(../../img/Mirijevo_Model_1.jpg);
             // background-image:
             //     url(../../img/excavators.jpg);
             background-size: cover;
@@ -60,22 +58,21 @@
         }
 
         &--3 {
-            background-image: url(../../img/architecture3.jpg);
+            background-image: url(../../img/comingsoon.jpg);
             background-size: cover;
             background-position: center;
         }
     }
 
     &__heading {
-        font-size: 2.6rem;
+        font-size: 2rem;
         font-weight: 300;
         text-transform: uppercase;
-        text-align: right;
+        text-align: center;
         color: $color-white;
         position: absolute;
-        top: 12rem;
-        right: 2rem;
-        width: 70%;
+        top: 15rem;
+        width: 100%;
         @include respond(tab-land) {
             font-size: 2rem;
             width: 100%;
