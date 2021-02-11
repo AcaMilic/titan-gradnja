@@ -2225,7 +2225,7 @@ nav .menu-icon {
   font-family: 'Montserrat', sans-serif;
 }
 @media (max-width:640px) {
-  .header-gradnja .titangradnja-paralax{
+  .header-gradnja {
     background-attachment:initial;
   }
 }
