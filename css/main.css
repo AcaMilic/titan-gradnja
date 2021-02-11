@@ -2224,7 +2224,11 @@ nav .menu-icon {
   transition: all .3s;
   font-family: 'Montserrat', sans-serif;
 }
-
+@media (max-width:640px) {
+  .header-gradnja .titangradnja-paralax{
+    background-attachment:initial;
+  }
+}
 @media only screen and (max-width: 56.25em) {
   .form__input {
     width: 100%;
