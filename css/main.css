@@ -2224,11 +2224,15 @@ nav .menu-icon {
   transition: all .3s;
   font-family: 'Montserrat', sans-serif;
 }
+<<<<<<< HEAD
 @media (max-width:640px) {
   .header-gradnja {
     background-attachment:initial;
   }
 }
+=======
+
+>>>>>>> 6c42943d22d1d20433b2d95f7dbeffb0e8f03ad7
 @media only screen and (max-width: 56.25em) {
   .form__input {
     width: 100%;
