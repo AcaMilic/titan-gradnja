@@ -49,9 +49,9 @@
               <li><a href="project_three.html">Novogradnja</a></li>
             </ul>
           </li>
-          <li><a href="index.html#contact" class="">Kontakt</a></li>
-          <li><a href="#"><img src="img/serbia.png" alt=""></a></li>
-          <li><a href="#"><img src="img/united-kingdom.png" alt=""></a></li>
+          <li><a href="#contact" class="">Kontakt</a></li>
+          <!-- <li><a href="#"><img src="img/serbia.png" alt=""></a></li> -->
+          <li><a href="project_two_en.html"><img src="img/united-kingdom.png" alt=""></a></li>
         </ul>
       </div>
     </nav>
@@ -109,7 +109,7 @@
             <li><a href="#header">Home</a></li>
             <li><a href="#about_me">O Nama</a></li>
             <li><a href="#portfolio">Projekti</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Kontakt</a></li>
           </ul>
         </div>
         <div class="col-1-of-3">
@@ -136,11 +136,17 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoidGl0YW5jb25jZXB0IiwiYSI6ImNranU3MGkwazFpb2syc2p4OWpzd3owdDgifQ.kmTsWTpcHYdMwbSG95tYQg';
-      var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/titanconcept/ckjbcqywna01x19p373n0jeug'
-      });
+     mapboxgl.accessToken = 'pk.eyJ1IjoidGl0YW5jb25jZXB0IiwiYSI6ImNramJjNzNhazFwZGcycXJ1YmE2YjlqNW8ifQ.s4AwywZijMnKUFGDLM3U0w';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/titanconcept/ckjbcqywna01x19p373n0jeug',
+      center: [20.450627219775242, 44.81895458646815],
+      zoom: 14,   
+    });
+  
+    var marker = new mapboxgl.Marker()
+    .setLngLat([20.450627219775242, 44.81895458646815])
+    .addTo(map);
   </script>
 </body>
 </html>

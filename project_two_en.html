@@ -35,31 +35,32 @@
         <i class="fa fa-bars fa-2x"></i>
       </div>
       <div class="menu">
-        <ul>
+       <ul>
           <div class="logo">
             <img src="img/titan-c-logo-white.png" alt="logo">
           </div>
-          <li><a href="index.html" class="">Početna</a></li>
-          <li><a href="about.html" class="">O Nama</a></li>
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="about.html" class="">About us</a></li>
           <li class="services">
-            <a href="#" class="services-hover">Projekti</a>
+            <a href="#" class="services-hover">Projects</a>
             <ul class="services-links">
               <li><a href="project_two.html">Jajinci</a></li>
               <li><a href="project_one.html">Mirijevo</a></li>
               <li><a href="project_three.html">Novogradnja</a></li>
             </ul>
           </li>
-          <li><a href="#contact" class="">Kontakt</a></li>
-          <!-- <li><a href="#"><img src="img/serbia.png" alt=""></a></li> -->
-          <li><a href="project_one_en.html"><img src="img/united-kingdom.png" alt=""></a></li>
+          <li><a href="#contact" class="">Contact</a></li>
+          <li><a href="project_two.html"><img src="img/serbia.png" alt=""></a></li>
+          <!-- <li><a href="#"><img src="img/united-kingdom.png" alt=""></a></li> -->
         </ul>
-
       </div>
     </nav>
     <div class="header__text-box">
+
        <h1 class="heading-primary">
-        <span class="heading-primary--sub">Novogradnja Mirijevo</span>
+        <span class="heading-primary--sub">New construction Jajinci</span>
       </h1> 
+
     </div>
   </header>
 
@@ -87,7 +88,7 @@
   </div>
 
   <!-- <section class="project">
-    <h1 class="project_title">Novogradnja Mirijevo</h1>
+    <h1 class="project_title">Novogradnja Jajnici</h1>
     <p class="project_subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis iste eveniet provident nam consectetur distinctio laborum atque aliquam quas, alias, animi vitae adipisci architecto sapiente ab vel! Id earum totam laudantium. Velit quae, ullam voluptas ad culpa repellendus eligendi reprehenderit animi ea voluptatem quis consectetur autem aspernatur magnam exercitationem dolorem.</p>
   </section> -->
 
@@ -96,36 +97,36 @@
   <!-- /HEader -->
 
   <!--/ Loader -->
-
     <!-- Footer -->
     <br>
     <br>
     <br>
-    <footer class="navigation-footer">
-      <div class="roww navigation-padding">
-        <div class="col-1-of-3">
+
+   <footer class="navigation-footer">
+    <div class="roww navigation-padding">
+      <div class="col-1-of-3">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about_me">About us</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-1-of-3">
+        <div class="phone-and-mail">
           <ul>
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about_me">O Nama</a></li>
-            <li><a href="#portfolio">Projekti</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li><i class="fas fa-phone phone-and-mail__icons"></i><span> 012 345 678</span>
+            </li>
+            <li><i class="far fa-envelope phone-and-mail__icons"></i><span> titangradnja@gmail.com</span></li>
+            <li><i class="fas fa-map-marker-alt phone-and-mail__icons"></i><span> Address 12/34</span></li>
           </ul>
         </div>
-        <div class="col-1-of-3">
-          <div class="phone-and-mail">
-            <ul>
-              <li><i class="fas fa-phone phone-and-mail__icons"></i><span> 012 345 678</span>
-              </li>
-              <li><i class="far fa-envelope phone-and-mail__icons"></i><span> titangradnja@gmail.com</span></li>
-              <li><i class="fas fa-map-marker-alt phone-and-mail__icons"></i><span> Address 12/34</span></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-1-of-3 copy">
-          <h4>Copyright &copy; Titan Concept 2020, All Rights Reserved. </h4>
-        </div>
       </div>
-      </footer>
+      <div class="col-1-of-3 copy">
+        <h4>Copyright &copy; Titan Gradnja 2020, All Rights Reserved. </h4>
+      </div>
+    </div>
+    </footer>
   <!-- Scroll-to-Top -->
   <a href="#header" class="scrollup"><i class="far fa-arrow-alt-circle-up"></i></a>
   <!-- Day and night -->
@@ -134,9 +135,8 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
-  <div id='map' style='width: 400px; height: 300px;'></div>
   <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoidGl0YW5jb25jZXB0IiwiYSI6ImNramJjNzNhazFwZGcycXJ1YmE2YjlqNW8ifQ.s4AwywZijMnKUFGDLM3U0w';
+     mapboxgl.accessToken = 'pk.eyJ1IjoidGl0YW5jb25jZXB0IiwiYSI6ImNramJjNzNhazFwZGcycXJ1YmE2YjlqNW8ifQ.s4AwywZijMnKUFGDLM3U0w';
     var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/titanconcept/ckjbcqywna01x19p373n0jeug',
@@ -148,6 +148,5 @@
     .setLngLat([20.450627219775242, 44.81895458646815])
     .addTo(map);
   </script>
-  
 </body>
 </html>
