@@ -1365,8 +1365,68 @@ nav .menu-icon {
   }
 }
 
+.header-ruzavetrova {
+  height: 90vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 34, 62, 0.9)), to(rgba(0, 0, 0, 0.17))), url(../../img/stari_projekti/ruza-vetrova-mirijevo-prototip.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 34, 62, 0.9), rgba(0, 0, 0, 0.17)), url(../../img/stari_projekti/ruza-vetrova-mirijevo-prototip.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-ruzavetrova .heading-primary--sub {
+  font-size: 6.5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header-ruzavetrova .heading-primary--sub {
+    font-size: 3rem;
+  }
+}
+
+@supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
+  .header-ruzavetrova {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 90%, 0 80%, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 95%, 0 80%, 0 0);
+  }
+}
+
+.header-ruzavetrova .header__portfolio {
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100vw;
+  height: 20vh;
+  text-align: center;
+}
+
+.header-ruzavetrova__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-ruzavetrova__text-box .btn--whitee {
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header-ruzavetrova__text-box {
+    top: 50%;
+    width: 100%;
+  }
+}
+
 .header-jajinci {
-  height: 80vh;
+  height: 90vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 34, 62, 0.9)), to(rgba(0, 0, 0, 0.17))), url(../../img/Jajinci.jpg);
   background-image: linear-gradient(to right bottom, rgba(0, 34, 62, 0.9), rgba(0, 0, 0, 0.17)), url(../../img/Jajinci.jpg);
   background-size: cover;
@@ -1414,60 +1474,6 @@ nav .menu-icon {
 
 @media only screen and (max-width: 37.5em) {
   .header-jajinci__text-box {
-    top: 50%;
-    width: 100%;
-  }
-}
-
-.header-ruzavetrova {
-  height: 80vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 34, 62, 0.9)), to(rgba(0, 0, 0, 0.17))), url(../../img/ruza-vetrova-mirijevo.png);
-  background-image: linear-gradient(to right bottom, rgba(0, 34, 62, 0.9), rgba(0, 0, 0, 0.17)), url(../../img/ruza-vetrova-mirijevo.png);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  position: relative;
-  overflow: hidden;
-}
-
-.header-ruzavetrova .heading-primary--sub {
-  font-size: 3rem;
-}
-
-@supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
-  .header-ruzavetrova {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 90%, 0 80%, 0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 95%, 0 80%, 0 0);
-  }
-}
-
-.header-ruzavetrova .header__portfolio {
-  position: absolute;
-  top: 9%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  position: absolute;
-  width: 100vw;
-  height: 20vh;
-  text-align: center;
-}
-
-.header-ruzavetrova__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.header-ruzavetrova__text-box .btn--whitee {
-  margin-right: 2rem;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .header-ruzavetrova__text-box {
     top: 50%;
     width: 100%;
   }
@@ -1820,6 +1826,28 @@ nav .menu-icon {
   }
 }
 
+@media only screen and (max-width: 56.25em) {
+  #about_me .logo_titan_en {
+    margin-top: 0;
+  }
+}
+
+#about_me .logo_titan_en img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 75em) {
+  #about_me .logo_titan_en img {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  #about_me .logo_titan_en img {
+    width: 100%;
+  }
+}
+
 #about_me .logo_titan {
   margin-top: 13rem;
 }
@@ -2092,13 +2120,13 @@ nav .menu-icon {
 }
 
 .card__picture--3 {
-  background-image: url(../../img/ruza-vetrova-mirijevo.png);
+  background-image: url(../../img/stari_projekti/ruza-vetrova-mirijevo-prototip.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .card__heading {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
@@ -2277,23 +2305,6 @@ nav .menu-icon {
   -webkit-transition: all .3s;
   transition: all .3s;
   font-family: 'Montserrat', sans-serif;
-}
-@media (max-width:640px) {
-  .header-gradnja {
-    background-attachment:initial;
-  }
-}
-
-@media (max-width:640px) {
-  .titangradnja-paralax {
-    background-attachment:initial;
-  }
-}
-
-@media (max-width:640px) {
-  .header-gradnja {
-    background-attachment:initial;
-  }
 }
 
 @media only screen and (max-width: 56.25em) {

@@ -114,8 +114,65 @@
     }
   }
 }
+.header-ruzavetrova {
+  height: 90vh;
+  background-image: linear-gradient(to right bottom,
+    rgba($color-primary-dark, 0.9),
+    rgba($color-black, 0.17)),
+    url(../../img/stari_projekti/ruza-vetrova-mirijevo-prototip.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+  .heading-primary--sub{
+    font-size: 6.5rem;
+
+    @include respond(phone){
+      font-size: 3rem;
+    }
+  }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0,
+      100% 0,
+      100% 0,
+      100% 80%,
+      50% 90%,
+      0 80%,
+      0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 80%, 50% 95%, 0 80%, 0 0);
+  }
+
+
+  .header__portfolio {
+    @include absCenter-top;
+    position: absolute;
+    width: 100vw;
+    height: 20vh;
+    text-align: center;
+
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    .btn--whitee{
+      margin-right: 2rem;
+    }
+
+
+    @include respond(phone) {
+      top: 50%;
+      width: 100%;
+    }
+  }
+}
 .header-jajinci {
-  height: 80vh;
+  height: 90vh;
   background-image: linear-gradient(to right bottom,
     rgba($color-primary-dark, 0.9),
     rgba($color-black, 0.17)),
